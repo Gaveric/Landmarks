@@ -28,7 +28,7 @@ struct LandmarkList: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Landmarks"))
+            .navigationBarTitle(Text("Храмы Березовского благочиния"))
         }
     }
 }
