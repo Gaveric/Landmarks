@@ -10,13 +10,13 @@ import CoreLocation
 
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
-    var name: String
-    fileprivate var imageName: String
-    fileprivate var coordinates: Coordinates
-    var state: String
-    var park: String
-    var category: Category
-    var isFavorite: Bool
+    var name: String                                //название храма
+    fileprivate var imageName: String               //имя картинки
+    fileprivate var coordinates: Coordinates        //структура координат храма
+    var state: String                               //город\поселок
+    var park: String                // пока не использовать
+    var category: Category          // пока не использовать
+    var isFavorite: Bool                            // добавить в избранные
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

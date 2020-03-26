@@ -35,7 +35,7 @@ func load<T: Decodable>(_ filename: String) -> T {
 
 final class ImageStore {
     typealias _ImageDictionary = [String: CGImage]
-    fileprivate var images: _ImageDictionary = [:]
+    fileprivate var images: _ImageDictionary = [:]     // объявление массива картинок
 
     fileprivate static var scale = 2
     
@@ -66,3 +66,9 @@ final class ImageStore {
     }
 }
 
+
+struct Data_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

@@ -16,7 +16,8 @@ struct LandmarkDetail: View {
     }
     
     var body: some View {
-        VStack {
+        NavigationView {
+            VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
@@ -45,9 +46,26 @@ struct LandmarkDetail: View {
                     }
                 }
                 
+                
+                
                 HStack(alignment: .top) {
-                    Text(landmark.park)
-                        .font(.subheadline)
+                    
+                    
+                    //-----------------
+                                
+                                    NavigationLink(
+                                        destination: TimetableView(landmark: landmark)
+                                            .environmentObject(self.userData)
+                                    )               {  Text ("Расписание") .font(.subheadline)
+                                        
+                                    }
+                                    
+                                
+                    //_________________
+
+                    
+                    
+                       
                     Spacer()
                     Text(landmark.state)
                         .font(.subheadline)
@@ -56,6 +74,11 @@ struct LandmarkDetail: View {
             .padding()
             
             Spacer()
+            
+            
+        }//================
+            
+            
         }
     }
 }
