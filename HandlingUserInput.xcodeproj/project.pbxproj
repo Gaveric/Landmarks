@@ -35,6 +35,7 @@
 		B7D2AAC5229F4D7C0061E5F5 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D2AAC4229F4D7C0061E5F5 /* UserData.swift */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
 		CE8E762E242B9A900065DD08 /* timeTable.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E762D242B9A900065DD08 /* timeTable.pdf */; };
+		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		CE8E762A242B7A010065DD08 /* landmarkData1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData1.json; sourceTree = "<group>"; };
 		CE8E762B242B83760065DD08 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
 		CE8E762D242B9A900065DD08 /* timeTable.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = timeTable.pdf; sourceTree = "<group>"; };
+		CE8E7631242CAEED0065DD08 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				B7394879229F1B3F00C47603 /* CircleImage.swift */,
 				B739487B229F1B6800C47603 /* MapView.swift */,
+				CE8E7631242CAEED0065DD08 /* PDFKitView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7394882229F28B900C47603 /* Data.swift in Sources */,
+				CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */,
 				CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */,
 				B7394866229F194000C47603 /* AppDelegate.swift in Sources */,
 				B739487A229F1B3F00C47603 /* CircleImage.swift in Sources */,

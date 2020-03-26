@@ -12,25 +12,32 @@ import PDFKit
 struct TimetableView: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
-    //var documentURL = URL (string: "http://успенскийприход.рф/files/2020/02/на-март-1.pdf")
-    var document = PDFDocument(url: URL(string: "http://успенскийприход.рф/files/2020/02/на-март-1.pdf")!)
-  
-    //if let document = PDFDocument(url: pdfURL) {
-//               pdfView.document = document
-//           }
-//
-//           DispatchQueue.main.asyncAfter(deadline: .now()+3) {
-//               self.dismiss(animated: true, completion: nil)
-//           }
-       
+    
+     let documentURL = Bundle.main.url(forResource: "timeTable", withExtension: "pdf")!
+     var body: some View {
+         VStack(alignment: .center) {
+//             Text("PSPDFKit SwiftUI")
+//                 .font(.largeTitle)
+//             HStack(alignment: .top) {
+//                 Text("Made with ❤ at WWDC19")
+//                     .font(.title)
+//             }
+             PDFKitView(url: documentURL)
+         }
+     }
     
     
-    var body: some View {
-       
-     Text("здесь откроется расписание")
-       
-      
-    }
+    
+//    var body: some View {
+//        PDFKitView(landmark.park)
+//     Text("здесь откроется расписание")
+//    }
+    
+    
+    
+    
+    
+    
 }
 
 struct TimetableView_Previews: PreviewProvider {

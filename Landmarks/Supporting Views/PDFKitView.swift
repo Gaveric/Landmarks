@@ -1,0 +1,40 @@
+//
+//  File.swift
+//  Landmarks
+//
+//  Created by User on 26.03.2020.
+//  Copyright © 2020 Apple. All rights reserved.
+//
+
+import SwiftUI
+import UIKit
+import PDFKit
+
+    struct PDFKitRepresentedView: UIViewRepresentable {
+    let url: URL
+
+    init(_ url: URL) {
+        self.url = url
+    }
+
+    func makeUIView(context: UIViewRepresentableContext<PDFKitRepresentedView>) -> PDFKitRepresentedView.UIViewType {
+        // Create a `PDFView` and set its `PDFDocument`.
+        let pdfView = PDFView()
+        pdfView.document = PDFDocument(url: self.url)
+        return pdfView
+    }
+
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<PDFKitRepresentedView>) {
+        // Update the view.
+    }
+}
+
+//----------------------------
+
+    struct PDFKitView: View {
+    var url: URL
+
+    var body: some View {
+        PDFKitRepresentedView(url)
+    }
+}

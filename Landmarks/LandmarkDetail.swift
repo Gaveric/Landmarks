@@ -20,7 +20,7 @@ struct LandmarkDetail: View {
             VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 300)
+                .frame(height: 150)
             
             CircleImage(image: landmark.image)
                 .offset(x: 0, y: -130)
