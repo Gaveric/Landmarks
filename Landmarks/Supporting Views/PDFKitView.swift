@@ -21,6 +21,7 @@ import PDFKit
         // Create a `PDFView` and set its `PDFDocument`.
         let pdfView = PDFView()
         pdfView.document = PDFDocument(url: self.url)
+         pdfView.autoScales = true
         return pdfView
     }
 
@@ -36,5 +37,11 @@ import PDFKit
 
     var body: some View {
         PDFKitRepresentedView(url)
+    }
+}
+
+struct PDFKitView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
