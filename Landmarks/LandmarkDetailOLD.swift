@@ -1,15 +1,8 @@
-//
-//  LandmarkDetail.swift
-//  Landmarks
-//
-//  Created by User on 07.05.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
-
-
-import SwiftUI
-
-struct LandmarkDetail: View {
+ 
+ /*
+ import SwiftUI
+ 
+ struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
     
@@ -49,79 +42,66 @@ struct LandmarkDetail: View {
                     }
                 }
                 
-            }
-            .offset(x: 0, y: -50)
-            .padding(.bottom, -50)
-            
-            // Повседневное общее расписание
-            //  Spacer()
-            
+                }
+                         .offset(x: 0, y: -50)
+                         .padding(.bottom, -50)
+                
+                // Повседневное общее расписание
+              //  Spacer()
+               
             HStack {
                 Text ("Расписание Богослужений:")
-                Spacer()
+            Spacer()
             }
             
-                        HStack(alignment: .top) {
-                            NavigationLink(
-                                destination: TimetableView(landmark: landmark)
-                                    .environmentObject(self.userData)
-                            )               {  Text ("(смотреть подробное расписание)") .font(.subheadline)
-                            }
-                            
-                            Spacer()
-            //                Text(landmark.state)
-            //                    .font(.subheadline)
-                        }
+            
+            
             
             List{
                 
-                VStack(alignment: .leading) {
+                VStack {
                     Text ("Понедельник:")
                     Text ("8-00 - Утреня.Вечерня.Литургия")
                     Text ("16-00 - Утреня.Вечерня.(Всенощное бдение)")
                 }
                 
-                VStack(alignment: .leading) {
-                    Text ("Вторник-Пятница:")
+                VStack {
+                    Text ("Вторник:")
                     Text ("8-30 - Литургия")
                     Text ("16-00 - Утреня.Вечерня.(Всенощное бдение)")
                 }
-                
-                VStack(alignment: .leading) {
-                    Text ("Суббота:")
-                    Text ("8-30 - Литургия")
-                    Text ("16-00 - Всенощное бдение")
+                    
+                    
                 }
-                
-                VStack(alignment: .leading) {
-                    Text ("Воскресение:")
-                    Text ("8-30 - Литургия")
-                    Text ("Утреня, Вечерня не служится")
-                }
-                
-                
-            } // List end
                 .font(.system(size: 12))
             
+          
             
+                // Ссылка на подробное расписание
+                
+                HStack(alignment: .top) {
+                    NavigationLink(
+                        destination: TimetableView(landmark: landmark)
+                            .environmentObject(self.userData)
+                    )               {  Text ("Посмотреть подробное расписание") .font(.subheadline)
+                    }
+                    
+                    Spacer()
+                    Text(landmark.state)
+                        .font(.subheadline)
+                }
+          
             
-            
-            // Ссылка на подробное расписание
-            
-
-            
-            
-            
+            // Spacer()
         }
-        
-        
     }
-}
-
-struct LandmarkDetail_Preview: PreviewProvider {
+ }
+ 
+ struct LandmarkDetail_Preview: PreviewProvider {
     static var previews: some View {
         let userData = UserData()
         return LandmarkDetail(landmark: userData.landmarks[0])
             .environmentObject(userData)
     }
-}
+ }
+*/
