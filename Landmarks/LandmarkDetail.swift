@@ -37,6 +37,9 @@ struct LandmarkDetail: View {
                     Button(action: {
                         self.userData.landmarks[self.landmarkIndex]
                             .isFavorite.toggle()
+                        
+                        saveJSON(filename: "landmarkData.json", object: self.userData.landmarks)
+       
                     }) {
                         if self.userData.landmarks[self.landmarkIndex]
                             .isFavorite {
@@ -73,38 +76,40 @@ struct LandmarkDetail: View {
             //                    .font(.subheadline)
                         }
             
+            if landmark.explanation == nil {
+            
             List{
-                
                 VStack(alignment: .leading) {
                     Text ("Понедельник:")
-                    Text ("8-00 - Утреня.Вечерня.Литургия")
-                    Text ("16-00 - Утреня.Вечерня.(Всенощное бдение)")
+                    Text (landmark.timeTable!.monday.morning)
+                    Text (landmark.timeTable!.monday.evening)
                 }
-                
                 VStack(alignment: .leading) {
                     Text ("Вторник-Пятница:")
-                    Text ("8-30 - Литургия")
-                    Text ("16-00 - Утреня.Вечерня.(Всенощное бдение)")
+                    Text (landmark.timeTable!.tuesdayFriday.morning)
+                    Text (landmark.timeTable!.tuesdayFriday.evening)
                 }
                 
                 VStack(alignment: .leading) {
                     Text ("Суббота:")
-                    Text ("8-30 - Литургия")
-                    Text ("16-00 - Всенощное бдение")
+                    Text (landmark.timeTable!.saturday.morning)
+                    Text (landmark.timeTable!.saturday.evening)
                 }
                 
                 VStack(alignment: .leading) {
                     Text ("Воскресение:")
-                    Text ("8-30 - Литургия")
-                    Text ("Утреня, Вечерня не служится")
+                    Text (landmark.timeTable!.sunday.morning)
+                    Text (landmark.timeTable!.sunday.evening)
                 }
                 
                 
             } // List end
                 .font(.system(size: 12))
             
-            
-            
+            }
+            else {
+                Text (landmark.explanation!)
+            }
             
             // Ссылка на подробное расписание
             

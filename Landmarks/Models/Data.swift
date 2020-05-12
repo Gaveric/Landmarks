@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import CoreLocation
 
-let landmarkData: [Landmark] = load("landmarkData.json")
+var landmarkData: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -31,6 +31,43 @@ func load<T: Decodable>(_ filename: String) -> T {
     } catch {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
+}
+
+func saveJSON<T: Codable>(filename: String, object: T) {
+    do {
+        
+//        if let documentDirectoryUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//        let fileURL = documentDirectoryUrl.appendingPathComponent("MyFile.json")
+        
+        
+           // let data: Data
+        
+        guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+            else {
+                fatalError("Couldn't find \(filename) in main bundle.")
+        }
+        
+//        do {
+//            data = try Data(contentsOf: file)
+//        } catch {
+//            fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+//        }
+        
+        do {
+            let encoder = try JSONEncoder().encode(object)
+            return try encoder.write (to: file)
+            
+            
+        //        let fileURL = try FileManager.default
+//            .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+//            .appendingPathComponent(named)
+//        let encoder = try JSONEncoder().encode(object)
+//
+//            try encoder.write(to: fileURL)
+    } catch {
+        print("JSONSave error of \(error)")
+    }
+}
 }
 
 final class ImageStore {

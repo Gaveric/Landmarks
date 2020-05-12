@@ -17,7 +17,11 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String                // пока не использовать
     var category: Category          // пока не использовать
     var isFavorite: Bool                            // добавить в избранные
-
+    var explanation: String?            // Пояснение о расписании (если nill - есть подробное расписание)
+    var timeTable: TimeTable?  // это массив дней
+    //var timeOfDay: TimeOfDay
+    
+    
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
@@ -30,6 +34,7 @@ struct Landmark: Hashable, Codable, Identifiable {
         case rivers = "Rivers"
         case mountains = "Mountains"
     }
+    
 }
 
 extension Landmark {
@@ -41,6 +46,16 @@ extension Landmark {
 struct Coordinates: Hashable, Codable {
     var latitude: Double
     var longitude: Double
+}
+
+// MARK: - TimeTable
+struct TimeTable: Hashable, Codable {
+    var monday, tuesdayFriday, saturday, sunday: Day
+}
+
+// MARK: - Day
+struct Day: Hashable, Codable {
+    var morning, evening: String
 }
 
 struct Landmark_Previews: PreviewProvider {
