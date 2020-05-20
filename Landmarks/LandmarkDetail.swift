@@ -59,25 +59,20 @@ struct LandmarkDetail: View {
             // Повседневное общее расписание
             //  Spacer()
             
+            
+            //                Text(landmark.state)
+            //                    .font(.subheadline)
+            
+            
+            if landmark.explanation == nil {
+                
             HStack {
                 Text ("Расписание Богослужений:")
                 Spacer()
             }
             
-                        HStack(alignment: .top) {
-                            NavigationLink(
-                                destination: TimetableView(landmark: landmark)
-                                    .environmentObject(self.userData)
-                            )               {  Text ("(смотреть подробное расписание)") .font(.subheadline)
-                            }
-                            
-                            Spacer()
-            //                Text(landmark.state)
-            //                    .font(.subheadline)
-                        }
             
-            if landmark.explanation == nil {
-            
+                
             List{
                 VStack(alignment: .leading) {
                     Text ("Понедельник:")
@@ -101,8 +96,6 @@ struct LandmarkDetail: View {
                     Text (landmark.timeTable!.sunday.morning)
                     Text (landmark.timeTable!.sunday.evening)
                 }
-                
-                
             } // List end
                 .font(.system(size: 12))
             
@@ -112,9 +105,16 @@ struct LandmarkDetail: View {
             }
             
             // Ссылка на подробное расписание
-            
 
+            Spacer()
             
+            HStack(alignment: .top) {
+                    NavigationLink(
+                                destination: TimetableView(landmark: landmark)
+                                    .environmentObject(self.userData)
+                    )               {  Text ("(посмотреть подробное расписание)") .font(.subheadline)
+                    }
+            }
             
             
         }

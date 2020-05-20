@@ -7,7 +7,11 @@ A single row to be displayed in a list of landmarks.
 
 import SwiftUI
 
+
 struct LandmarkRow: View {
+    @EnvironmentObject private var userData: UserData
+
+    
     var landmark: Landmark
 
     var body: some View {

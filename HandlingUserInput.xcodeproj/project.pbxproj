@@ -35,6 +35,7 @@
 		CE066C342456A43600ED1C0D /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE066C262456A43600ED1C0D /* chilkoottrail.jpg */; };
 		CE066C352456A43600ED1C0D /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE066C272456A43600ED1C0D /* rainbowlake.jpg */; };
 		CE066C3C2456E40D00ED1C0D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE066C3B2456E40D00ED1C0D /* WebView.swift */; };
+		CE14D3C0246D373B00CC477F /* landmarkData2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE14D3BF246D373B00CC477F /* landmarkData2.json */; };
 		CE537FAE24596E7B00790F8C /* uspenskiPrihod.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE537FAD24596E7B00790F8C /* uspenskiPrihod.jpg */; };
 		CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
@@ -75,6 +76,7 @@
 		CE066C262456A43600ED1C0D /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
 		CE066C272456A43600ED1C0D /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
 		CE066C3B2456E40D00ED1C0D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CE14D3BF246D373B00CC477F /* landmarkData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData2.json; sourceTree = "<group>"; };
 		CE537FAD24596E7B00790F8C /* uspenskiPrihod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uspenskiPrihod.jpg; sourceTree = "<group>"; };
 		CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		CE8E762B242B83760065DD08 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		CE066C192456A43600ED1C0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE14D3BF246D373B00CC477F /* landmarkData2.json */,
 				CE537FAD24596E7B00790F8C /* uspenskiPrihod.jpg */,
 				CE066C232456A43600ED1C0D /* landmarkData.json */,
 				CE066C382456A81000ED1C0D /* oldFoto */,
@@ -267,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE14D3C0246D373B00CC477F /* landmarkData2.json in Resources */,
 				CE066C302456A43600ED1C0D /* umbagog.jpg in Resources */,
 				B7394872229F194200C47603 /* LaunchScreen.storyboard in Resources */,
 				B739486F229F194200C47603 /* Preview Assets.xcassets in Resources */,
