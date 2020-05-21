@@ -57,10 +57,10 @@ struct LandmarkList: View {
                 }
                 */
                 Button ("Обновить список храмов", action: {
-                    let url = URL (string: "https://files.progressman.ru/landmarkData.json")
+                    //let url = URL (string: "https://files.progressman.ru/landmarkData.json")
                         //http://uspenski.cerkov.ru/files/2020/05/landmarkData.jpg")
                         
-                    //landmarkData = getFromURL1 (url: baseURL )
+                    landmarkData = load ("lanmarkData2.json" )
                     //landmarkData = fetch ("http://uspenski.cerkov.ru/files/2020/05/landmarkData.jpg")
                      
                     print (landmarkData, "                                             ПРИНТ ПО КНОПКЕ")

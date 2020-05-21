@@ -36,6 +36,7 @@
 		CE066C352456A43600ED1C0D /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE066C272456A43600ED1C0D /* rainbowlake.jpg */; };
 		CE066C3C2456E40D00ED1C0D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE066C3B2456E40D00ED1C0D /* WebView.swift */; };
 		CE14D3C0246D373B00CC477F /* landmarkData2.json in Resources */ = {isa = PBXBuildFile; fileRef = CE14D3BF246D373B00CC477F /* landmarkData2.json */; };
+		CE4C0F4A2475555000A5ACAA /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */; };
 		CE537FAE24596E7B00790F8C /* uspenskiPrihod.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE537FAD24596E7B00790F8C /* uspenskiPrihod.jpg */; };
 		CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
@@ -77,6 +78,7 @@
 		CE066C272456A43600ED1C0D /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
 		CE066C3B2456E40D00ED1C0D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CE14D3BF246D373B00CC477F /* landmarkData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData2.json; sourceTree = "<group>"; };
+		CE4C0F492475555000A5ACAA /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		CE537FAD24596E7B00790F8C /* uspenskiPrihod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uspenskiPrihod.jpg; sourceTree = "<group>"; };
 		CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		CE8E762B242B83760065DD08 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B7394870229F194200C47603 /* LaunchScreen.storyboard */,
 				B7394873229F194200C47603 /* Info.plist */,
 				B739486D229F194200C47603 /* Preview Content */,
+				CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -174,8 +177,8 @@
 		CE066C192456A43600ED1C0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE14D3BF246D373B00CC477F /* landmarkData2.json */,
 				CE537FAD24596E7B00790F8C /* uspenskiPrihod.jpg */,
+				CE14D3BF246D373B00CC477F /* landmarkData2.json */,
 				CE066C232456A43600ED1C0D /* landmarkData.json */,
 				CE066C382456A81000ED1C0D /* oldFoto */,
 			);
@@ -313,6 +316,7 @@
 				B739489F229F2D9700C47603 /* LandmarkRow.swift in Sources */,
 				B7D2AAC5229F4D7C0061E5F5 /* UserData.swift in Sources */,
 				B7394881229F28B900C47603 /* Landmark.swift in Sources */,
+				CE4C0F4A2475555000A5ACAA /* CoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +516,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE4C0F492475555000A5ACAA /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = CE4C0F492475555000A5ACAA /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B739485A229F194000C47603 /* Project object */;
 }
