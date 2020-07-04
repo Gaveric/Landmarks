@@ -1,11 +1,3 @@
-//
-//  File.swift
-//  Landmarks
-//
-//  Created by User on 26.03.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
-
 import SwiftUI
 import UIKit
 import PDFKit
@@ -29,8 +21,6 @@ import PDFKit
         // Update the view.
     }
 }
-
-//----------------------------
 
     struct PDFKitView: View {
     var url: URL

@@ -1,0 +1,129 @@
+[
+    {
+        "name": "Успенский Приход",
+        "category": "Lakes",
+        "city": "Port Alsworth",
+        "state": "Alaska",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": false,
+        "park": "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf",
+        "explanation": null,
+        "timeTable": {
+            "monday": {
+                "morning": "8-00 - Утреня.Вечерня.Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "tuesdayFriday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "saturday": {
+            "morning": "8-30 - Литургия",
+            "evening": "16-00 - Всенощное бдение"
+            },
+            "sunday": {
+            "morning": "8-30 - Литургия",
+            "evening": "Утреня и Вечерня служится в понедельник"
+        }
+        },
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "imageName": "uspenskiPrihod"
+    },
+    
+    
+    
+    {
+        "name": "Сретенская Церковь",
+        "category": "Lakes",
+        "city": "Port Alsworth",
+        "state": "Alaska",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Lake Clark National Park and Preserve",
+        "explanation": "Литургия совершается в храме в 9-00 каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии в 16-00 совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7953 03-87-44.",
+        "timeTable": null,
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "silversalmoncreek"
+    },
+    {
+        "name": "Храм св.Иоанна Воина",
+        "category": "Mountains",
+        "city": "Skagway",
+        "state": "Alaska",
+        "id": 1003,
+        "isFeatured": false,
+        "isFavorite": true,
+        "park": "Klondike Gold Rush National Historical Park",
+        
+        "timeTable": {
+            "monday": {
+                "morning": "8-00 - Утреня.Вечерня.Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "tuesdayFriday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "saturday": {
+            "morning": "8-30 - Литургия",
+            "evening": "16-00 - Всенощное бдение"
+            },
+            "sunday": {
+            "morning": "8-30 - Литургия",
+            "evening": "Утреня и Вечерня служится в понедельник"
+        }
+        },
+        
+        
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "chilkoottrail"
+    },
+    {
+        "name": "Церковь св.кн.Владимира",
+        "category": "Lakes",
+        "city": "Browning",
+        "state": "Montana",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": true,
+        "park": "Glacier National Park",
+        
+        "timeTable": {
+            "monday": {
+                "morning": "8-00 - Утреня.Вечерня.Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "tuesdayFriday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "saturday": {
+            "morning": "8-30 - Литургия",
+            "evening": "16-00 - Всенощное бдение"
+            },
+            "sunday": {
+            "morning": "8-30 - Литургия",
+            "evening": "Утреня и Вечерня служится в понедельник"
+        }
+        },
+        
+        
+        "coordinates": {
+            "longitude": -113.536248,
+            "latitude": 48.69423
+        },
+        "imageName": "stmarylake"
+
+    }
+]

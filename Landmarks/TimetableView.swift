@@ -6,7 +6,7 @@ struct TimetableView: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
     
-    let documentURL = Bundle.main.url(forResource: "timeTable", withExtension: "pdf")!
+    //let documentURL = Bundle.main.url(forResource: "timeTable", withExtension: "pdf")!
     var body: some View {
         VStack(alignment: .center) {
        
@@ -23,10 +23,6 @@ struct TimetableView: View {
                 let url = URL (string: "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf")
                 let downloadTask = URLSession.shared.downloadTask(with: url!) {
                     urlOrNil, responseOrNil, errorOrNil in
-                    // check for and handle errors:
-                    // * errorOrNil should be nil
-                    // * responseOrNil should be an HTTPURLResponse with statusCode in/Users/user/Downloads/HandlingUserInput-1/Complete/Landmarks/Landmarks/WebView.swift 200..<299
-                    
                     guard let fileURL = urlOrNil else { return }
                     do {
                         let documentsURL = try
@@ -43,20 +39,10 @@ struct TimetableView: View {
                 }
                 downloadTask.resume()
                 print(downloadTask)
-                
-                
             })
                 .padding()
                 .offset(x: -100, y: 0)
-         
-            
             //PDFKitView(url: documentURL)
-     
-// _______
-            
-            
-
-            
         }
     }
 }

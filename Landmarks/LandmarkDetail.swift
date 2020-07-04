@@ -1,12 +1,3 @@
-//
-//  LandmarkDetail.swift
-//  Landmarks
-//
-//  Created by User on 07.05.2020.
-//  Copyright © 2020 Apple. All rights reserved.
-//
-
-
 import SwiftUI
 
 struct LandmarkDetail: View {
@@ -18,15 +9,15 @@ struct LandmarkDetail: View {
     }
     
     var body: some View {
-        //        NavigationView {
-        VStack {
+            VStack {
             
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 110)
             
             CircleImage(image: landmark.image)
-                .offset(x: 0, y: -170)
+                 
+                .offset(x: 100, y: -173)
                 .padding(.bottom, -130)
             
             VStack(alignment: .center) {
@@ -38,8 +29,14 @@ struct LandmarkDetail: View {
                         self.userData.landmarks[self.landmarkIndex]
                             .isFavorite.toggle()
                         
-                        saveJSON(filename: "landmarkData.json", object: self.userData.landmarks)
-       
+                        let toggle =  self.userData.landmarks[self.landmarkIndex]
+                                                   .isFavorite
+                             
+                         let defaults = UserDefaults.standard
+                        defaults.set(String(toggle), forKey: self.userData.landmarks[self.landmarkIndex]
+                        .name)
+
+                         defaults.synchronize()
                     }) {
                         if self.userData.landmarks[self.landmarkIndex]
                             .isFavorite {
@@ -56,14 +53,6 @@ struct LandmarkDetail: View {
             .offset(x: 0, y: -50)
             .padding(.bottom, -50)
             
-            // Повседневное общее расписание
-            //  Spacer()
-            
-            
-            //                Text(landmark.state)
-            //                    .font(.subheadline)
-            
-            
             if landmark.explanation == nil {
                 
             HStack {
@@ -71,8 +60,6 @@ struct LandmarkDetail: View {
                 Spacer()
             }
             
-            
-                
             List{
                 VStack(alignment: .leading) {
                     Text ("Понедельник:")

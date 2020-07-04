@@ -1,5 +1,4 @@
- 
-import Foundation
+ import Foundation
 import SwiftUI
 import WebKit
 
@@ -9,7 +8,6 @@ struct WebView: UIViewRepresentable {
         guard let url = URL (string: self.url) else {
             return WKWebView()
         }
-        
         let request = URLRequest (url:url)
         let wkWebView = WKWebView()
         wkWebView.load (request)
@@ -18,7 +16,6 @@ struct WebView: UIViewRepresentable {
     
     func updateUIView(_ uiView: WebView.UIViewType, context: UIViewRepresentableContext<WebView>){
     }
-    
 }
  
  struct WebView_Previews: PreviewProvider {

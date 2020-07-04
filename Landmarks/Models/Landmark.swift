@@ -1,10 +1,3 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-The model for an individual landmark.
-*/
-
 import SwiftUI
 import CoreLocation
 
@@ -17,10 +10,8 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String                // пока не использовать
     var category: Category          // пока не использовать
     var isFavorite: Bool                            // добавить в избранные
-    var explanation: String?            // Пояснение о расписании (если nill - есть подробное расписание)
+    var explanation: String?            // Пояснение о расписании (если nill - должно быть подробное расписание в timeTable)
     var timeTable: TimeTable?  // это массив дней
-    //var timeOfDay: TimeOfDay
-    
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -34,7 +25,6 @@ struct Landmark: Hashable, Codable, Identifiable {
         case rivers = "Rivers"
         case mountains = "Mountains"
     }
-    
 }
 
 extension Landmark {
