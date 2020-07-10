@@ -1,15 +1,15 @@
 import SwiftUI
 struct LandmarkRow: View {
     @EnvironmentObject private var userData: UserData
-
+    
     var landmark: Landmark
 
     var body: some View {
+        
         HStack {
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
-            
             
             VStack {
                 HStack {
@@ -20,7 +20,6 @@ struct LandmarkRow: View {
                     Text(landmark.state)
                     Spacer()
                 }
-     
             }
  
             Spacer()

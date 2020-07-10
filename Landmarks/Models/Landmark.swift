@@ -24,6 +24,9 @@ struct Landmark: Hashable, Codable, Identifiable {
         case lakes = "Lakes"
         case rivers = "Rivers"
         case mountains = "Mountains"
+        case berezovskoe = "Березовское"
+        case vp = "Верхнепышминское"
+        case vseрsviatskoe = "Всехсвятское"
     }
 }
 

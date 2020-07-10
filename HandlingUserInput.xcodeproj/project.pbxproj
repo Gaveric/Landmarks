@@ -23,11 +23,18 @@
 		CE066C3C2456E40D00ED1C0D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE066C3B2456E40D00ED1C0D /* WebView.swift */; };
 		CE0D79002496426C00D6EE3E /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D78FF2496426C00D6EE3E /* Default.jpg */; };
 		CE0D79022496433F00D6EE3E /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D79012496433F00D6EE3E /* umbagog.jpg */; };
+		CE0D790F24B47AD100D6EE3E /* VladimiraMonetniy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790824B47AD100D6EE3E /* VladimiraMonetniy.jpg */; };
+		CE0D791024B47AD100D6EE3E /* PokrovaSarapulka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790924B47AD100D6EE3E /* PokrovaSarapulka.jpg */; };
+		CE0D791124B47AD100D6EE3E /* IoanaVoina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790A24B47AD100D6EE3E /* IoanaVoina.jpg */; };
+		CE0D791224B47AD100D6EE3E /* VsehSviatih.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790B24B47AD100D6EE3E /* VsehSviatih.jpg */; };
+		CE0D791324B47AD100D6EE3E /* DefaultPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790C24B47AD100D6EE3E /* DefaultPhoto.jpg */; };
+		CE0D791424B47AD100D6EE3E /* UspeniaVP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790D24B47AD100D6EE3E /* UspeniaVP.jpg */; };
+		CE0D791524B47AD100D6EE3E /* NikolaStanovaia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790E24B47AD100D6EE3E /* NikolaStanovaia.jpg */; };
+		CE0D793924B5D7EA00D6EE3E /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D793824B5D7EA00D6EE3E /* CategoryRow.swift */; };
 		CE4C0F4A2475555000A5ACAA /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */; };
 		CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
 		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
-		CEA0A45C248E40F000988E23 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45B248E40F000988E23 /* Favorites.swift */; };
 		CEA0A45F248E493E00988E23 /* Stars+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */; };
 		CEA0A460248E493E00988E23 /* Stars+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */; };
 		CEB67CBA249641DB0046CF0D /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB7249641DB0046CF0D /* landmarkData.json */; };
@@ -57,11 +64,18 @@
 		CE066C3B2456E40D00ED1C0D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		CE0D78FF2496426C00D6EE3E /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
 		CE0D79012496433F00D6EE3E /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
+		CE0D790824B47AD100D6EE3E /* VladimiraMonetniy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VladimiraMonetniy.jpg; sourceTree = "<group>"; };
+		CE0D790924B47AD100D6EE3E /* PokrovaSarapulka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PokrovaSarapulka.jpg; sourceTree = "<group>"; };
+		CE0D790A24B47AD100D6EE3E /* IoanaVoina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IoanaVoina.jpg; sourceTree = "<group>"; };
+		CE0D790B24B47AD100D6EE3E /* VsehSviatih.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VsehSviatih.jpg; sourceTree = "<group>"; };
+		CE0D790C24B47AD100D6EE3E /* DefaultPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DefaultPhoto.jpg; sourceTree = "<group>"; };
+		CE0D790D24B47AD100D6EE3E /* UspeniaVP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UspeniaVP.jpg; sourceTree = "<group>"; };
+		CE0D790E24B47AD100D6EE3E /* NikolaStanovaia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NikolaStanovaia.jpg; sourceTree = "<group>"; };
+		CE0D793824B5D7EA00D6EE3E /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		CE4C0F492475555000A5ACAA /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		CE8E762B242B83760065DD08 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
 		CE8E7631242CAEED0065DD08 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
-		CEA0A45B248E40F000988E23 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CEB67CB7249641DB0046CF0D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
@@ -117,6 +131,7 @@
 				CE066C192456A43600ED1C0D /* Resources */,
 				B739487E229F282200C47603 /* Models */,
 				B73948A0229F2E1F00C47603 /* LandmarkList.swift */,
+				CE0D793824B5D7EA00D6EE3E /* CategoryRow.swift */,
 				B739489E229F2D9700C47603 /* LandmarkRow.swift */,
 				B7394869229F194000C47603 /* LandmarkDetailOLD.swift */,
 				CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */,
@@ -126,8 +141,8 @@
 				B739486B229F194200C47603 /* Assets.xcassets */,
 				B7394870229F194200C47603 /* LaunchScreen.storyboard */,
 				B7394873229F194200C47603 /* Info.plist */,
-				B739486D229F194200C47603 /* Preview Content */,
 				CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */,
+				B739486D229F194200C47603 /* Preview Content */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -153,10 +168,9 @@
 		B739487E229F282200C47603 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B7394880229F28B900C47603 /* Data.swift */,
-				B739487F229F28B900C47603 /* Landmark.swift */,
 				B7D2AAC4229F4D7C0061E5F5 /* UserData.swift */,
-				CEA0A45B248E40F000988E23 /* Favorites.swift */,
+				B739487F229F28B900C47603 /* Landmark.swift */,
+				B7394880229F28B900C47603 /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,14 +178,29 @@
 		CE066C192456A43600ED1C0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE0D78FF2496426C00D6EE3E /* Default.jpg */,
-				CE0D79012496433F00D6EE3E /* umbagog.jpg */,
+				CE0D790724B45A8500D6EE3E /* Photo */,
 				CEB67CB7249641DB0046CF0D /* landmarkData.json */,
 				CEB67CB8249641DB0046CF0D /* landmarkData2.json */,
-				CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */,
 			);
 			name = Resources;
 			path = "../../../../../Desktop/HandlingUserInput-1/Complete/Landmarks/Landmarks/Resources";
+			sourceTree = "<group>";
+		};
+		CE0D790724B45A8500D6EE3E /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */,
+				CE0D790C24B47AD100D6EE3E /* DefaultPhoto.jpg */,
+				CE0D78FF2496426C00D6EE3E /* Default.jpg */,
+				CE0D790A24B47AD100D6EE3E /* IoanaVoina.jpg */,
+				CE0D790E24B47AD100D6EE3E /* NikolaStanovaia.jpg */,
+				CE0D790924B47AD100D6EE3E /* PokrovaSarapulka.jpg */,
+				CE0D79012496433F00D6EE3E /* umbagog.jpg */,
+				CE0D790D24B47AD100D6EE3E /* UspeniaVP.jpg */,
+				CE0D790824B47AD100D6EE3E /* VladimiraMonetniy.jpg */,
+				CE0D790B24B47AD100D6EE3E /* VsehSviatih.jpg */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 		E573155042573F7430EB4C1C /* LICENSE */ = {
@@ -243,8 +272,15 @@
 			files = (
 				B7394872229F194200C47603 /* LaunchScreen.storyboard in Resources */,
 				CEB67CBA249641DB0046CF0D /* landmarkData.json in Resources */,
+				CE0D790F24B47AD100D6EE3E /* VladimiraMonetniy.jpg in Resources */,
+				CE0D791124B47AD100D6EE3E /* IoanaVoina.jpg in Resources */,
+				CE0D791224B47AD100D6EE3E /* VsehSviatih.jpg in Resources */,
 				CEB67CBC249641DB0046CF0D /* uspenskiPrihod.jpg in Resources */,
+				CE0D791324B47AD100D6EE3E /* DefaultPhoto.jpg in Resources */,
+				CE0D791524B47AD100D6EE3E /* NikolaStanovaia.jpg in Resources */,
 				B739486F229F194200C47603 /* Preview Assets.xcassets in Resources */,
+				CE0D791024B47AD100D6EE3E /* PokrovaSarapulka.jpg in Resources */,
+				CE0D791424B47AD100D6EE3E /* UspeniaVP.jpg in Resources */,
 				CE0D79022496433F00D6EE3E /* umbagog.jpg in Resources */,
 				CE0D79002496426C00D6EE3E /* Default.jpg in Resources */,
 				CEB67CBB249641DB0046CF0D /* landmarkData2.json in Resources */,
@@ -274,9 +310,9 @@
 				B739486A229F194000C47603 /* LandmarkDetailOLD.swift in Sources */,
 				B739489F229F2D9700C47603 /* LandmarkRow.swift in Sources */,
 				B7D2AAC5229F4D7C0061E5F5 /* UserData.swift in Sources */,
-				CEA0A45C248E40F000988E23 /* Favorites.swift in Sources */,
 				B7394881229F28B900C47603 /* Landmark.swift in Sources */,
 				CE4C0F4A2475555000A5ACAA /* CoreDataModel.xcdatamodeld in Sources */,
+				CE0D793924B5D7EA00D6EE3E /* CategoryRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

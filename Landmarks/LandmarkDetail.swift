@@ -57,6 +57,7 @@ struct LandmarkDetail: View {
                 
             HStack {
                 Text ("Расписание Богослужений:")
+                    .padding(.leading)
                 Spacer()
             }
             
@@ -89,6 +90,9 @@ struct LandmarkDetail: View {
             }
             else {
                 Text (landmark.explanation!)
+                    .padding(.all)
+                    
+                                        
             }
             
             // Ссылка на подробное расписание
