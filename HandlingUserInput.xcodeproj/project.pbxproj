@@ -78,8 +78,8 @@
 		CE8E7631242CAEED0065DD08 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		CEB67CB7249641DB0046CF0D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
-		CEB67CB8249641DB0046CF0D /* landmarkData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData2.json; path = "../../../HandlingUserInput-1/Complete/Landmarks/Landmarks/Resources/landmarkData2.json"; sourceTree = SOURCE_ROOT; };
+		CEB67CB7249641DB0046CF0D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/landmarkData.json"; sourceTree = "<group>"; };
+		CEB67CB8249641DB0046CF0D /* landmarkData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData2.json; path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/landmarkData2.json"; sourceTree = "<group>"; };
 		CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uspenskiPrihod.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,7 +183,7 @@
 				CEB67CB8249641DB0046CF0D /* landmarkData2.json */,
 			);
 			name = Resources;
-			path = "../../../../../Desktop/HandlingUserInput-1/Complete/Landmarks/Landmarks/Resources";
+			path = "../../../../HandlingUserInput-1/Complete/Landmarks/Landmarks/Resources";
 			sourceTree = "<group>";
 		};
 		CE0D790724B45A8500D6EE3E /* Photo */ = {
@@ -200,7 +200,8 @@
 				CE0D790824B47AD100D6EE3E /* VladimiraMonetniy.jpg */,
 				CE0D790B24B47AD100D6EE3E /* VsehSviatih.jpg */,
 			);
-			path = Photo;
+			name = Photo;
+			path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/Photo";
 			sourceTree = "<group>";
 		};
 		E573155042573F7430EB4C1C /* LICENSE */ = {

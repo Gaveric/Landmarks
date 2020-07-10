@@ -7,7 +7,7 @@ struct LandmarkList: View {
     
     var categories: [String: [Landmark]] {
         Dictionary(
-            grouping: userData.landmarks, //landmarkData,
+            grouping: userData.landmarks,
             by: { $0.category.rawValue }
         )
     }
@@ -20,33 +20,16 @@ struct LandmarkList: View {
                     Toggle(isOn: $userData.showFavoritesOnly) {
                         Text("Show Favorites Only")
                     }
-                
                      ForEach (categories.keys.sorted(), id: \.self) { key in
                                        CategoryRow(categoryName: key, items: self.categories[key]!)
-                        }
-                    
-                    
-//                    ForEach(userData.landmarks) { landmark in
-//                        if !self.userData.showFavoritesOnly || landmark.isFavorite {
-//                            NavigationLink(
-//                                destination: LandmarkDetail(landmark: landmark)
-//                                    .environmentObject(self.userData)
-//                            ) {
-//                                LandmarkRow(landmark: landmark)
-//                            }
-//                        }
-//                   }
-                  
-                        
-                        
-                        
-                        .navigationBarTitle(Text("Храмы Екатеринбургской епархии"))
+                    }
+                     .navigationBarTitle(Text("Храмы Екатеринбургской епархии"))
                 
                 Button ("Обновить список храмов", action: {
                     self.userData.takeUrl()
                     print ("                                             ПРИНТ ПО КНОПКЕ")
                     })
-            }
+                }
             }
         }
     }
@@ -62,7 +45,7 @@ struct LandmarkList: View {
 struct LandmarksList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            LandmarkList()//categoryName: "Березовское", items: Array(landmarkData.prefix(4)))
+            LandmarkList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

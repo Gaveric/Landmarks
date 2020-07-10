@@ -7,8 +7,6 @@ struct CategoryRow: View {
     var items: [Landmark]
     var body: some View {
         VStack(alignment: .leading) {
-            
-                
             HStack {
                 Text(self.categoryName)
                     .font(.headline)
@@ -19,27 +17,25 @@ struct CategoryRow: View {
                 self.expand.toggle()
             }
             if expand {
-             //  VStack(alignment: .leading, spacing: 0) {
-           // HStack {
-            List {
+             List {
+                
+                //_________________Где-то здесь добавляет лишние ячейки______________________
+                
                         ForEach(self.items) { landmark in
-                          // Text(landmark.name)
-                            
                             if !self.userData.showFavoritesOnly || landmark.isFavorite {
                                 NavigationLink(
                                     destination: LandmarkDetail(landmark: landmark)
-                                        //.environmentObject(self.userData)
+                                        .environmentObject(self.userData)
                                 ) {
                                     
                             LandmarkRow(landmark: landmark)
-                                    
-                    }.scaledToFill()
+                //______________________________________
+                    }.scaledToFill()  // Если это не использовать, то ячейки вообще не отображаются
                             }
                 }
-                
-               // }
             }
-            .scaledToFit()//.scaledToFill()
+            //.scaledToFit()
+            .scaledToFill()
         }
        }
     }

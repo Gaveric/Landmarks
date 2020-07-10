@@ -1,11 +1,10 @@
-[
-    {
-        "name": "Успенский Приход",
-        "category": "Lakes",
+[{
+        "name": "Успения пр.Богородицы",
+        "category": "Березовское",
         "city": "Port Alsworth",
-        "state": "Alaska",
+        "state": "г.Березовский",
         "id": 1001,
-        "isFeatured": true,
+        "isFeatured": false,
         "isFavorite": false,
         "park": "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf",
         "explanation": null,
@@ -19,50 +18,90 @@
                 "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
             },
             "saturday": {
-            "morning": "8-30 - Литургия",
-            "evening": "16-00 - Всенощное бдение"
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Всенощное бдение"
             },
             "sunday": {
-            "morning": "8-30 - Литургия",
-            "evening": "Утреня и Вечерня служится в понедельник"
-        }
+                "morning": "8-30 - Литургия",
+                "evening": "Утреня и Вечерня служится в понедельник"
+            }
         },
         "coordinates": {
-            "longitude": -116.166868,
-            "latitude": 34.011286
+            "longitude": 56.911488,
+            "latitude": 60.806439
         },
         "imageName": "uspenskiPrihod"
     },
-    
-    
-    
+
+
+
     {
-        "name": "Сретенская Церковь",
-        "category": "Lakes",
+        "name": "Сретения Господня",
+        "category": "Березовское",
         "city": "Port Alsworth",
-        "state": "Alaska",
+        "state": "п.Старопышмкинск",
         "id": 1002,
         "isFeatured": false,
         "isFavorite": false,
         "park": "Lake Clark National Park and Preserve",
-        "explanation": "Литургия совершается в храме в 9-00 каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии в 16-00 совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7953 03-87-44.",
+        "explanation": "Литургия совершается в храме в 9-00 каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии в 16-00 совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7(953)03-87-44.",
         "timeTable": null,
         "coordinates": {
-            "longitude": -152.665167,
-            "latitude": 59.980167
+            "longitude": 56.932817,
+            "latitude":   60.901174
         },
-        "imageName": "silversalmoncreek"
+        "imageName": "DefaultPhoto"
     },
+
     {
-        "name": "Храм св.Иоанна Воина",
-        "category": "Mountains",
+           "name": "Всех Святых",
+           "category": "Березовское",
+           "city": "Browning",
+           "state": "г. Екатеринбург",
+           "id": 1003,
+           "isFeatured": false,
+           "isFavorite": false,
+           "park": "Glacier National Park",
+
+           "timeTable": {
+               "monday": {
+                   "morning": "8-00 - Утреня.Вечерня.Литургия",
+                   "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+               },
+               "tuesdayFriday": {
+                   "morning": "8-30 - Литургия",
+                   "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+               },
+               "saturday": {
+                   "morning": "8-30 - Литургия",
+                   "evening": "16-00 - Всенощное бдение"
+               },
+               "sunday": {
+                   "morning": "8-30 - Литургия",
+                   "evening": "Утреня и Вечерня служится в понедельник"
+               }
+           },
+
+
+           "coordinates": {
+               "longitude": -113.536248,
+               "latitude": 48.69423
+           },
+           "imageName": "VsehSviatih"
+
+       },
+
+    
+    {
+        "name": "Св.Иоанна Воина",
+        "category": "Всехсвятское",
         "city": "Skagway",
-        "state": "Alaska",
-        "id": 1003,
+        "state": "п.Новоберезовский",
+        "id": 1004,
         "isFeatured": false,
-        "isFavorite": true,
+        "isFavorite": false,
         "park": "Klondike Gold Rush National Historical Park",
-        
+
         "timeTable": {
             "monday": {
                 "morning": "8-00 - Утреня.Вечерня.Литургия",
@@ -73,32 +112,34 @@
                 "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
             },
             "saturday": {
-            "morning": "8-30 - Литургия",
-            "evening": "16-00 - Всенощное бдение"
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Всенощное бдение"
             },
             "sunday": {
-            "morning": "8-30 - Литургия",
-            "evening": "Утреня и Вечерня служится в понедельник"
-        }
+                "morning": "8-30 - Литургия",
+                "evening": "Утреня и Вечерня служится в понедельник"
+            }
         },
-        
-        
         "coordinates": {
             "longitude": -135.334571,
             "latitude": 59.560551
         },
-        "imageName": "chilkoottrail"
+        "imageName": "IoanaVoina"
     },
+
+
+
+    
     {
-        "name": "Церковь св.кн.Владимира",
-        "category": "Lakes",
+        "name": "Св.кн.Владимира",
+        "category": "Березовское",
         "city": "Browning",
-        "state": "Montana",
-        "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
+        "state": "п.Монетный",
+        "id": 1005,
+        "isFeatured": false,
+        "isFavorite": false,
         "park": "Glacier National Park",
-        
+
         "timeTable": {
             "monday": {
                 "morning": "8-00 - Утреня.Вечерня.Литургия",
@@ -109,21 +150,143 @@
                 "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
             },
             "saturday": {
-            "morning": "8-30 - Литургия",
-            "evening": "16-00 - Всенощное бдение"
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Всенощное бдение"
             },
             "sunday": {
-            "morning": "8-30 - Литургия",
-            "evening": "Утреня и Вечерня служится в понедельник"
-        }
+                "morning": "8-30 - Литургия",
+                "evening": "Утреня и Вечерня служится в понедельник"
+            }
         },
-        
-        
+
+
         "coordinates": {
             "longitude": -113.536248,
             "latitude": 48.69423
         },
-        "imageName": "stmarylake"
+        "imageName": "VladimiraMonetniy"
+
+    },
+
+    {
+        "name": "Николая Чудотворца",
+        "category": "Березовское",
+        "city": "Browning",
+        "state": "п. Становая",
+        "id": 1006,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Glacier National Park",
+
+        "timeTable": {
+            "monday": {
+                "morning": "8-00 - Утреня.Вечерня.Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "tuesdayFriday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "saturday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Всенощное бдение"
+            },
+            "sunday": {
+                "morning": "8-30 - Литургия",
+                "evening": "Утреня и Вечерня служится в понедельник"
+            }
+        },
+
+
+        "coordinates": {
+            "longitude": -113.536248,
+            "latitude": 48.69423
+        },
+        "imageName": "NikolaStanovaia"
+
+    },
+
+    
+    {
+        "name": "Покрова пр. Богородицы",
+        "category": "Березовское",
+        "city": "Browning",
+        "state": "п. Сарапулка",
+        "id": 1007,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Glacier National Park",
+
+        "timeTable": {
+            "monday": {
+                "morning": "8-00 - Утреня.Вечерня.Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "tuesdayFriday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "saturday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Всенощное бдение"
+            },
+            "sunday": {
+                "morning": "8-30 - Литургия",
+                "evening": "Утреня и Вечерня служится в понедельник"
+            }
+        },
+
+
+        "coordinates": {
+            "longitude": -113.536248,
+            "latitude": 48.69423
+        },
+        "imageName": "PokrovaSarapulka"
+
+    },
+    
+    
+    {
+        "name": "Успения пр. Богородицы",
+        "category": "Верхнепышминское",
+        "city": "Browning",
+        "state": "г. Верхняя Пышма",
+        "id": 1008,
+        "isFeatured": false,
+        "isFavorite": false,
+        "park": "Glacier National Park",
+
+        "timeTable": {
+            "monday": {
+                "morning": "8-00 - Утреня.Вечерня.Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "tuesdayFriday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+            },
+            "saturday": {
+                "morning": "8-30 - Литургия",
+                "evening": "16-00 - Всенощное бдение"
+            },
+            "sunday": {
+                "morning": "8-30 - Литургия",
+                "evening": "Утреня и Вечерня служится в понедельник"
+            }
+        },
+
+
+        "coordinates": {
+            "longitude": -113.536248,
+            "latitude": 48.69423
+        },
+        "imageName": "UspeniaVP"
 
     }
+    
+    
+    
+    
+    
 ]
+

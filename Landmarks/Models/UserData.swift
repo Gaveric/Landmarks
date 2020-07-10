@@ -5,12 +5,11 @@ final class UserData: ObservableObject {
     @Published var showFavoritesOnly = false      //@Published var landmarks = landmarkData
     @Published var landmarks: [Landmark] = []
     init() {
-       takeBondle() // takeUrl()
-        
+        //takeBondle()
+        takeUrl()
     }
     func takeUrl () {
-        let url = URL(string: "http://uspenski.cerkov.ru/files/2020/05/landmarkData.jpg")!
-            //"https://my-files.su/Save/y44rjd/landmarkData2.json")!
+        let url = URL(string: "https://my-files.su/Save/cmr520/landmarkData2.json")!
              //https://files.progressman.ru/landmarkData.json")!
     URLSession.shared.dataTask(with: url) {(data, response, error) in
         do {
