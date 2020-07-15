@@ -20,6 +20,8 @@ struct LandmarkDetail: View {
                         .font(.title)
                     Button(action: {
                         self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                        dump(self.userData.landmarks[self.landmarkIndex].isFavorite)
+                        self.userData.makeCategories(landmarks: self.userData.landmarks)
                         let toggle =  self.userData.landmarks[self.landmarkIndex].isFavorite
                         let defaults = UserDefaults.standard
                         defaults.set(String(toggle), forKey: self.userData.landmarks[self.landmarkIndex].name)

@@ -7,22 +7,14 @@ final class UserData: ObservableObject {
     @Published var categories: [String: [Landmark]] = [:]
     @Published var expander = [String: Bool] ()
     
-    
-    
-    
-    //           var expander: [String: Bool]  {
-    //               Dictionary (uniqueKeysWithValues: zip(categories.keys, Array(repeating: false, count: categories.keys.count)))
-    //                   }
-    //
-    //         var expanderP = expander
-    
-    init() {takeBondle()
-         
-       // self.takeUrl()
-                self.makeCategories(landmarks: self.landmarks)
+        
+    init() {
+        //takeBondle()
+         takeUrl()
+        makeCategories(landmarks: landmarks)
      }
     
-    func makeCategories(landmarks: [Landmark]){//}->[String: [Landmark]] {
+    func makeCategories(landmarks: [Landmark]){
         categories = Dictionary(
             grouping:  self.landmarks,
             by: { $0.category.rawValue }
