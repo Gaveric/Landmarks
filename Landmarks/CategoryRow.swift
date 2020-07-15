@@ -19,7 +19,17 @@ struct CategoryRow: View {
             if expand {
              List {
                 
-                //_________________Где-то здесь добавляет лишние ячейки______________________
+                
+                
+                //                     Section(header: Text(gr.title),
+                //                         footer: Text("...footer...") ) {
+                //                     ForEach(gr.items.identified(by: \.self)) { item in
+                //                         Text(item)
+
+                
+                
+                
+               // _________________Где-то здесь добавляет лишние ячейки______________________
                 
                         ForEach(self.items) { landmark in
                             if !self.userData.showFavoritesOnly || landmark.isFavorite {
@@ -27,7 +37,7 @@ struct CategoryRow: View {
                                     destination: LandmarkDetail(landmark: landmark)
                                         .environmentObject(self.userData)
                                 ) {
-                                    
+
                             LandmarkRow(landmark: landmark)
                 //______________________________________
                     }.scaledToFill()  // Если это не использовать, то ячейки вообще не отображаются
@@ -49,3 +59,4 @@ struct CategoryRow_Previews: PreviewProvider {
         )
     }
 }
+ 

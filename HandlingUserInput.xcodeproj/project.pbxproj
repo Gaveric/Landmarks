@@ -40,6 +40,7 @@
 		CEB67CBA249641DB0046CF0D /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB7249641DB0046CF0D /* landmarkData.json */; };
 		CEB67CBB249641DB0046CF0D /* landmarkData2.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB8249641DB0046CF0D /* landmarkData2.json */; };
 		CEB67CBC249641DB0046CF0D /* uspenskiPrihod.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */; };
+		CECBCB7924BECE29007947C5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBCB7824BECE29007947C5 /* FooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		CEB67CB7249641DB0046CF0D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/landmarkData.json"; sourceTree = "<group>"; };
 		CEB67CB8249641DB0046CF0D /* landmarkData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData2.json; path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/landmarkData2.json"; sourceTree = "<group>"; };
 		CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uspenskiPrihod.jpg; sourceTree = "<group>"; };
+		CECBCB7824BECE29007947C5 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				CE066C192456A43600ED1C0D /* Resources */,
 				B739487E229F282200C47603 /* Models */,
 				B73948A0229F2E1F00C47603 /* LandmarkList.swift */,
+				CECBCB7824BECE29007947C5 /* FooterView.swift */,
 				CE0D793824B5D7EA00D6EE3E /* CategoryRow.swift */,
 				B739489E229F2D9700C47603 /* LandmarkRow.swift */,
 				B7394869229F194000C47603 /* LandmarkDetailOLD.swift */,
@@ -298,6 +301,7 @@
 			files = (
 				B7394882229F28B900C47603 /* Data.swift in Sources */,
 				CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */,
+				CECBCB7924BECE29007947C5 /* FooterView.swift in Sources */,
 				CE066C3C2456E40D00ED1C0D /* WebView.swift in Sources */,
 				CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */,
 				B7394866229F194000C47603 /* AppDelegate.swift in Sources */,

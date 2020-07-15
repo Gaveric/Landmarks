@@ -11,6 +11,7 @@ struct LandmarkRow: View {
                 .resizable()
                 .frame(width: 50, height: 50)
             
+            
             VStack {
                 HStack {
                     Text(landmark.name)
@@ -30,7 +31,8 @@ struct LandmarkRow: View {
                     .foregroundColor(.yellow)
             }
         }
-    }
+        
+     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
