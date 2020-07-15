@@ -9,15 +9,15 @@ struct TimetableView: View {
     //let documentURL = Bundle.main.url(forResource: "timeTable", withExtension: "pdf")!
     var body: some View {
         VStack(alignment: .center) {
-       
-// Отображение пдф расписания через вебвью
-   
-//            WebView (url: "http://xn--d1abjaeeumcfledx5b.xn--p1ai/files/2020/03/%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8C-1.pdf")
             
-             WebView (url: landmark.park)
-        
-// Пока не готово - Обновление ПДФ расписания с сайта Храма (ссылка должна быть в Джейсоне)
-           
+            // Отображение пдф расписания через вебвью
+            
+            //            WebView (url: "http://xn--d1abjaeeumcfledx5b.xn--p1ai/files/2020/03/%D0%B0%D0%BF%D1%80%D0%B5%D0%BB%D1%8C-1.pdf")
+            
+            WebView (url: landmark.park)
+            
+            // Пока не готово - Обновление ПДФ расписания с сайта Храма (ссылка должна быть в Джейсоне)
+            
             Button ("Обновить расписание", action: {
                 
                 let url = URL (string: "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf")
