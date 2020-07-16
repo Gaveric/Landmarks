@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "turtlerock.jpg",
+      "filename" : "DefaultPhoto.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "DefaultPhoto-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "DefaultPhoto-2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B7394861229F194000C47603"
-               BuildableName = "Landmarks.app"
+               BuildableName = "TimeTable.app"
                BlueprintName = "Landmarks"
                ReferencedContainer = "container:HandlingUserInput.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B7394861229F194000C47603"
-            BuildableName = "Landmarks.app"
+            BuildableName = "TimeTable.app"
             BlueprintName = "Landmarks"
             ReferencedContainer = "container:HandlingUserInput.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B7394861229F194000C47603"
-            BuildableName = "Landmarks.app"
+            BuildableName = "TimeTable.app"
             BlueprintName = "Landmarks"
             ReferencedContainer = "container:HandlingUserInput.xcodeproj">
          </BuildableReference>

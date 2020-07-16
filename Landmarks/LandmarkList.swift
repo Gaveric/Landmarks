@@ -8,7 +8,7 @@ struct LandmarkList: View {
             VStack {
                 List {
                     Toggle(isOn: $userData.showFavoritesOnly) {
-                        Text("Show Favorites Only")
+                        Text("Только избранные")
                     }
                     ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
                         Section(
@@ -31,13 +31,15 @@ struct LandmarkList: View {
                         }
                     }.navigationBarTitle(Text("Храмы Екатеринбургской епархии"))
                     
-                    Button ("Обновить список храмов", action: {
-                        self.userData.takeUrl()
-                        print ("                                             ПРИНТ ПО КНОПКЕ")
-                        dump(self.userData.categories.keys.sorted())
-                        self.userData.makeCategories(landmarks: self.userData.landmarks)
-                    })
+                    
                 }
+                Button ("Обновить список храмов", action: {
+                    self.userData.takeUrl()
+                    
+                    print ("                                             ПРИНТ ПО КНОПКЕ")
+                    dump(self.userData.categories.keys.sorted())
+                    self.userData.makeCategories(landmarks: self.userData.landmarks)
+                })
             }
         }
     }

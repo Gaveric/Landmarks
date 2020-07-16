@@ -11,7 +11,11 @@ final class UserData: ObservableObject {
     init() {
         //takeBondle()
          takeUrl()
-        makeCategories(landmarks: landmarks)
+            //makeCategories(landmarks: landmarks)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.makeExpander()
+            
+        }
      }
     
     func makeCategories(landmarks: [Landmark]){
@@ -19,7 +23,11 @@ final class UserData: ObservableObject {
             grouping:  self.landmarks,
             by: { $0.category.rawValue }
         )
+    }
+    
+    func makeExpander() {
         expander = Dictionary (uniqueKeysWithValues: zip(categories.keys, Array(repeating: false, count: categories.keys.count)))
+
     }
     
     func takeUrl () {
@@ -34,7 +42,7 @@ final class UserData: ObservableObject {
                         
                         for i in 0..<self.landmarks.count {
                             dump (self.landmarks[i].name)
-                            dump (UserDefaults.standard.string (forKey:  self.landmarks[i].name))
+                           // dump (UserDefaults.standard.string (forKey:  self.landmarks[i].name))
                             
                             if UserDefaults.standard.string (forKey:  self.landmarks[i].name) != nil {
                                 
@@ -48,9 +56,10 @@ final class UserData: ObservableObject {
                 print("Error")
             }
         }.resume()
-        
-        
-    }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.makeCategories(landmarks: self.landmarks)
+        }
+     }
     
     func takeBondle() {
         
