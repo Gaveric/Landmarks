@@ -50,13 +50,6 @@ struct TimeTable: Hashable, Codable {
 struct Day: Hashable, Codable {
     var morning, evening: String
 }
-//
-//struct Section {
-//    var sectionName: String
-//    var expande: Bool = false
-//}
-
-
 
 struct Landmark_Previews: PreviewProvider {
     static var previews: some View {

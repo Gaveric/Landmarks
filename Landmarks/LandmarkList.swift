@@ -18,19 +18,14 @@ struct LandmarkList: View {
                     }
                     .frame( height:70)
                     
-                    
-                    
                     List {
                         HStack {
                             HStack {
                                 ButtonRefresh()
                                     .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 0))
-                                Spacer()
-                            }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/)
-
-                            
-
+                                //Spacer()
+                            }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/, alignment: .center)
                             Spacer()
                             HStack {
                                 Toggle(isOn: $userData.showFavoritesOnly) {
@@ -39,10 +34,9 @@ struct LandmarkList: View {
                                 .overlay(RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.gray, lineWidth: 0))
                             }.frame(width: 160.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/)
-
-                            
                         }.font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/).foregroundColor(.gray)
-                        
+                        .multilineTextAlignment(.center)
+
                         
                         ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
                             Section(
