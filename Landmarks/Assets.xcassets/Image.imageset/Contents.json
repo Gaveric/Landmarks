@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "DefaultPhoto.jpg",
+      "filename" : "Icon-Spotlight-40.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "DefaultPhoto-1.jpg",
+      "filename" : "Icon-Spotlight-40@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "DefaultPhoto-2.jpg",
+      "filename" : "Icon-Spotlight-40@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
