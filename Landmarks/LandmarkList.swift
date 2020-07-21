@@ -4,46 +4,82 @@ struct LandmarkList: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @State var expand = false
     var body: some View {
-        NavigationView {
-            VStack {
-                List {
-                    Toggle(isOn: $userData.showFavoritesOnly) {
-                        Text("Только избранные")
+        VStack {
+            NavigationView {
+                VStack {
+                    HStack {
+                        Text("Екатеринбургской епархии")
+                            .padding(.leading, 15)
+                            .font(.title)
+                        Spacer()
+                        ImageStore.shared.image(name: "DefaultPhoto")
+                            .resizable()
+                            .scaledToFit()
                     }
-                    ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
-                        Section(
-                            header:
+                    .frame( height:70)
+                    
+                    
+                    
+                    List {
+                        HStack {
                             HStack {
-                                Text(key+" благочиние")
-                                    .font(.headline)
-                                    .padding(.leading, 15)
-                                    .padding(.top, 5)
-                                Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
-                            }.onTapGesture {
-                                self.userData.expander[key]!.toggle()
-                            },
-                            footer:
-                            Text("") )
-                        {
-                            if self.userData.expander[key]! {
-                                FooterView(items: self.userData.categories[key]!, key: key)
+                                ButtonRefresh()
+                                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gray, lineWidth: 0))
+                                Spacer()
+                            }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/)
+
+                            
+
+                            Spacer()
+                            HStack {
+                                Toggle(isOn: $userData.showFavoritesOnly) {
+                                    Text("Только избранные")
+                                }
+                                .overlay(RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.gray, lineWidth: 0))
+                            }.frame(width: 160.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/)
+
+                            
+                        }.font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/).foregroundColor(.gray)
+                        
+                        
+                        ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
+                            Section(
+                                header:
+                                HStack {
+                                    Text(key+" благочиние")
+                                        .frame(height: 50)
+
+                                        .font(.headline)
+                                        .padding(.leading, 15)
+                                        .padding(.top, 5)
+                                        .foregroundColor(Color(red: 0.1, green: 0.3, blue: 0.3, opacity: 1.0))
+                                        
+
+                                    Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
+                                }.onTapGesture {
+                                    self.userData.expander[key]!.toggle()
+                                } )
+                            {
+                                if self.userData.expander[key]! {
+                                    FooterView(items: self.userData.categories[key]!, key: key)
+                                }
                             }
+                           
+                            
                         }
-                    }.navigationBarTitle(Text("Храмы Екатеринбургской епархии"))
-                    
-                    
-                }
-                Button ("Обновить список храмов", action: {
-                    self.userData.takeUrl()
-                    
-                    print ("                                             ПРИНТ ПО КНОПКЕ")
-                    dump(self.userData.categories.keys.sorted())
-                    self.userData.makeCategories(landmarks: self.userData.landmarks)
-                })
-            }
+                    }.navigationBarTitle(  Text("Храмы") )
+                    //.listStyle(GroupedListStyle())
+                    // .listRowBackground(Color.green)
+
+
+                }.background(Color.green.opacity(0.1))
+//                .offset(x:0, y: -50)
+//                .padding(.bottom, -50)
+            }//.background(Color.green.opacity(0.1))
         }
     }
-    
     func saveContext() {
         do {
             try managedObjectContext.save()

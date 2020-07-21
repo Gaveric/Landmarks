@@ -38,6 +38,7 @@
 		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
 		CEA0A45F248E493E00988E23 /* Stars+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */; };
 		CEA0A460248E493E00988E23 /* Stars+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */; };
+		CEA4D83B24C6AFCB00BCDE04 /* ButtonRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4D83A24C6AFCB00BCDE04 /* ButtonRefresh.swift */; };
 		CEB67CBA249641DB0046CF0D /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB7249641DB0046CF0D /* landmarkData.json */; };
 		CEB67CBB249641DB0046CF0D /* landmarkData2.json in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB8249641DB0046CF0D /* landmarkData2.json */; };
 		CEB67CBC249641DB0046CF0D /* uspenskiPrihod.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */; };
@@ -47,7 +48,7 @@
 /* Begin PBXFileReference section */
 		6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		8016A7122042026B58FF1299 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		B7394862229F194000C47603 /* Богослужения.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Богослужения.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7394862229F194000C47603 /* TimeTableChirch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableChirch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7394865229F194000C47603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7394867229F194000C47603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B7394869229F194000C47603 /* LandmarkDetailOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailOLD.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		CE8E7631242CAEED0065DD08 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CEA4D83A24C6AFCB00BCDE04 /* ButtonRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRefresh.swift; sourceTree = "<group>"; };
 		CEB67CB7249641DB0046CF0D /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/landmarkData.json"; sourceTree = "<group>"; };
 		CEB67CB8249641DB0046CF0D /* landmarkData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData2.json; path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/landmarkData2.json"; sourceTree = "<group>"; };
 		CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uspenskiPrihod.jpg; sourceTree = "<group>"; };
@@ -122,7 +124,7 @@
 		B7394863229F194000C47603 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7394862229F194000C47603 /* Богослужения.app */,
+				B7394862229F194000C47603 /* TimeTableChirch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 				B7394879229F1B3F00C47603 /* CircleImage.swift */,
 				B739487B229F1B6800C47603 /* MapView.swift */,
 				CE8E7631242CAEED0065DD08 /* PDFKitView.swift */,
+				CEA4D83A24C6AFCB00BCDE04 /* ButtonRefresh.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -244,7 +247,7 @@
 			);
 			name = Landmarks;
 			productName = Landmarks;
-			productReference = B7394862229F194000C47603 /* Богослужения.app */;
+			productReference = B7394862229F194000C47603 /* TimeTableChirch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -320,6 +323,7 @@
 				B739487A229F1B3F00C47603 /* CircleImage.swift in Sources */,
 				CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */,
 				CEA0A45F248E493E00988E23 /* Stars+CoreDataClass.swift in Sources */,
+				CEA4D83B24C6AFCB00BCDE04 /* ButtonRefresh.swift in Sources */,
 				B739487C229F1B6800C47603 /* MapView.swift in Sources */,
 				B73948A1229F2E1F00C47603 /* LandmarkList.swift in Sources */,
 				B7394868229F194000C47603 /* SceneDelegate.swift in Sources */,
@@ -468,6 +472,7 @@
 			baseConfigurationReference = 6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Landmarks/Preview\\ Content";
 				DEVELOPMENT_TEAM = GS96V2X2Y2;
@@ -477,11 +482,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Landmarks${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "Богослужения";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
+				PRODUCT_NAME = TimeTableChirch;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -490,6 +495,7 @@
 			baseConfigurationReference = 6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Landmarks/Preview\\ Content";
 				DEVELOPMENT_TEAM = GS96V2X2Y2;
@@ -499,11 +505,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Landmarks${SAMPLE_CODE_DISAMBIGUATOR}";
-				PRODUCT_NAME = "Богослужения";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
+				PRODUCT_NAME = TimeTableChirch;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

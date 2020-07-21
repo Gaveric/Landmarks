@@ -7,27 +7,24 @@ final class UserData: ObservableObject {
     @Published var categories: [String: [Landmark]] = [:]
     @Published var expander = [String: Bool] ()
     
-        
+    
     init() {
-        //takeBondle()
-         takeUrl()
-            //makeCategories(landmarks: landmarks)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.makeExpander()
-            
-        }
-     }
+        takeUrl()
+    }
     
     func makeCategories(landmarks: [Landmark]){
         categories = Dictionary(
             grouping:  self.landmarks,
             by: { $0.category.rawValue }
         )
-    }
+        dump (categories.count)
+        print ("     ________________categories________________")
+            }
     
     func makeExpander() {
         expander = Dictionary (uniqueKeysWithValues: zip(categories.keys, Array(repeating: false, count: categories.keys.count)))
-
+        dump (expander)
+        print ( "_____________expander___________")
     }
     
     func takeUrl () {
@@ -42,12 +39,19 @@ final class UserData: ObservableObject {
                         
                         for i in 0..<self.landmarks.count {
                             dump (self.landmarks[i].name)
-                           // dump (UserDefaults.standard.string (forKey:  self.landmarks[i].name))
+                            // dump (UserDefaults.standard.string (forKey:  self.landmarks[i].name))
                             
                             if UserDefaults.standard.string (forKey:  self.landmarks[i].name) != nil {
                                 
                                 self.landmarks[i].isFavorite =  Bool (UserDefaults.standard.string (forKey: self.landmarks[i].name) ?? "false")!
                             }}
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            
+                            self.makeCategories(landmarks: self.landmarks)
+                            self.makeExpander()
+
+                        }
+                        
                     }
                 } else {
                     print("No data")
@@ -56,10 +60,8 @@ final class UserData: ObservableObject {
                 print("Error")
             }
         }.resume()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.makeCategories(landmarks: self.landmarks)
-        }
-     }
+        
+    }
     
     func takeBondle() {
         

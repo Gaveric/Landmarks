@@ -1,5 +1,7 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+com.example.apple-samplecode.LandmarksGS96V2X2Y2
+ 
+ See LICENSE folder for this sample’s licensing information.
 
 Abstract:
 The application delegate.

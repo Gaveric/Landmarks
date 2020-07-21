@@ -10,10 +10,10 @@ struct LandmarkDetail: View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 110)
+                .frame(height: 150)
             CircleImage(image: landmark.image)
-                .offset(x: 100, y: -173)
-                .padding(.bottom, -130)
+                .offset(x: 100, y: -150)
+                .padding(.bottom, -110)
             VStack(alignment: .center) {
                 HStack {
                     Text(landmark.name)
@@ -21,7 +21,7 @@ struct LandmarkDetail: View {
                     Button(action: {
                         self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
                         dump(self.userData.landmarks[self.landmarkIndex].isFavorite)
-                        self.userData.makeCategories(landmarks: self.userData.landmarks)
+                        self.userData.makeCategories(landmarks: self.userData.landmarks)        //здесь нужно убрать перезапись категории
                         let toggle =  self.userData.landmarks[self.landmarkIndex].isFavorite
                         let defaults = UserDefaults.standard
                         defaults.set(String(toggle), forKey: self.userData.landmarks[self.landmarkIndex].name)
