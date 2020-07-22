@@ -19,7 +19,7 @@ final class UserData: ObservableObject {
         )
         dump (categories.count)
         print ("     ________________categories________________")
-            }
+    }
     
     func makeExpander() {
         expander = Dictionary (uniqueKeysWithValues: zip(categories.keys, Array(repeating: false, count: categories.keys.count)))
@@ -28,10 +28,9 @@ final class UserData: ObservableObject {
     }
     
     func takeUrl () {
-        let url = URL(string: "https://getfile.dokpub.com/yandex/get/https://yadi.sk/d/GxpO9Zl40aB-Sw")!
         
-        //"https://my-files.su/Save/cmr520/landmarkData2.json")!
-        //https://files.progressman.ru/landmarkData.json")!
+        
+        let url = URL(string:"https://raw.githubusercontent.com/Gaveric/Landmarks/ForGit/Landmarks/Resources/landmarkData2.json?token=ALKTB7YZI2VOQJ6Z6AJIP4C7DADWI")!
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             do {
                 if let todoData = data {
@@ -51,7 +50,7 @@ final class UserData: ObservableObject {
                             
                             self.makeCategories(landmarks: self.landmarks)
                             self.makeExpander()
-
+                            
                         }
                         
                     }
