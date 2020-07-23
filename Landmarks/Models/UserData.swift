@@ -19,7 +19,7 @@ final class UserData: ObservableObject {
         )
         dump (categories.count)
         print ("     ________________categories________________")
-    }
+            }
     
     func makeExpander() {
         expander = Dictionary (uniqueKeysWithValues: zip(categories.keys, Array(repeating: false, count: categories.keys.count)))
@@ -28,9 +28,28 @@ final class UserData: ObservableObject {
     }
     
     func takeUrl () {
+    
+        
+        let url = URL(string:"https://api.jsonbin.io/b/5f1931d0c58dc34bf5d90eee/latest")!
+            
+            
+            //https://files.fm/down.php?i=xt239puv")!
+                      // https://files.progressman.ru/landmarkData.json")!
+       
+
+        guard let url1 = URL(string: "https://api.lucidtech.ai/v0/receipts"),
+            let payload = "{\"documentId\": \"a50920e1-214b-4c46-9137-2c03f96aad56\"}".data(using: .utf8) else
+        {
+            return
+        }
+
+        var request = URLRequest(url: url1)
+        request.httpMethod = "POST"
+        request.addValue("your_api_key", forHTTPHeaderField: "x-api-key")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = payload
         
         
-        let url = URL(string:"https://raw.githubusercontent.com/Gaveric/Landmarks/ForGit/Landmarks/Resources/landmarkData2.json?token=ALKTB7YZI2VOQJ6Z6AJIP4C7DADWI")!
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             do {
                 if let todoData = data {
@@ -50,7 +69,7 @@ final class UserData: ObservableObject {
                             
                             self.makeCategories(landmarks: self.landmarks)
                             self.makeExpander()
-                            
+
                         }
                         
                     }

@@ -18,30 +18,30 @@ struct TimetableView: View {
             
             // Пока не готово - Обновление ПДФ расписания с сайта Храма (ссылка должна быть в Джейсоне)
             
-            Button ("Обновить расписание", action: {
-                
-                let url = URL (string: "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf")
-                let downloadTask = URLSession.shared.downloadTask(with: url!) {
-                    urlOrNil, responseOrNil, errorOrNil in
-                    guard let fileURL = urlOrNil else { return }
-                    do {
-                        let documentsURL = try
-                            FileManager.default.url(for: .documentDirectory,
-                                                    in: .userDomainMask,
-                                                    appropriateFor: nil,
-                                                    create: false)
-                        let savedURL = documentsURL.appendingPathComponent(
-                            fileURL.lastPathComponent)
-                        try FileManager.default.moveItem(at: fileURL, to: savedURL)
-                    } catch {
-                        print ("file error: \(error)")
-                    }
-                }
-                downloadTask.resume()
-                print(downloadTask)
-            })
-                .padding()
-                .offset(x: -100, y: 0)
+//            Button ("Обновить расписание", action: {
+//                
+//                let url = URL (string: "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf")
+//                let downloadTask = URLSession.shared.downloadTask(with: url!) {
+//                    urlOrNil, responseOrNil, errorOrNil in
+//                    guard let fileURL = urlOrNil else { return }
+//                    do {
+//                        let documentsURL = try
+//                            FileManager.default.url(for: .documentDirectory,
+//                                                    in: .userDomainMask,
+//                                                    appropriateFor: nil,
+//                                                    create: false)
+//                        let savedURL = documentsURL.appendingPathComponent(
+//                            fileURL.lastPathComponent)
+//                        try FileManager.default.moveItem(at: fileURL, to: savedURL)
+//                    } catch {
+//                        print ("file error: \(error)")
+//                    }
+//                }
+//                downloadTask.resume()
+//                print(downloadTask)
+//            })
+//                .padding()
+//                .offset(x: -100, y: 0)
             //PDFKitView(url: documentURL)
         }
     }
