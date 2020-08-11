@@ -7,7 +7,6 @@
       "size" : "20x20"
     },
     {
-      "filename" : "Icon-Spotlight-42.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
@@ -49,7 +48,6 @@
       "size" : "60x60"
     },
     {
-      "filename" : "Icon-Small-1.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
@@ -97,13 +95,11 @@
       "size" : "76x76"
     },
     {
-      "filename" : "DefaultPhoto-1.jpg",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "DefaultPhoto.jpg",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
