@@ -30,24 +30,24 @@ final class UserData: ObservableObject {
     func takeUrl () {
     
         
-        let url = URL(string:"https://api.jsonbin.io/b/5f1931d0c58dc34bf5d90eee/latest")!
+        let url = URL(string:"https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
             
             
             //https://files.fm/down.php?i=xt239puv")!
                       // https://files.progressman.ru/landmarkData.json")!
        
+//https://api.jsonbin.io/b/5f3ba62fb88c04101cf64a4e/latest
+//        guard let url1 = URL(string: "https://api.lucidtech.ai/v0/receipts"),
+//            let payload = "{\"documentId\": \"a50920e1-214b-4c46-9137-2c03f96aad56\"}".data(using: .utf8) else
+//        {
+//            return
+//        }
 
-        guard let url1 = URL(string: "https://api.lucidtech.ai/v0/receipts"),
-            let payload = "{\"documentId\": \"a50920e1-214b-4c46-9137-2c03f96aad56\"}".data(using: .utf8) else
-        {
-            return
-        }
-
-        var request = URLRequest(url: url1)
-        request.httpMethod = "POST"
-        request.addValue("your_api_key", forHTTPHeaderField: "x-api-key")
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = payload
+//        var request = URLRequest(url: url1)
+//        request.httpMethod = "POST"
+//        request.addValue("your_api_key", forHTTPHeaderField: "x-api-key")
+//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+//        request.httpBody = payload
         
         
         URLSession.shared.dataTask(with: url) {(data, response, error) in

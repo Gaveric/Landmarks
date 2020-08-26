@@ -10,10 +10,10 @@ struct LandmarkDetail: View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
-                .frame(height: 150)
+                .frame(height: 100)
             CircleImage(image: landmark.image)
                 .offset(x: 100, y: -150)
-                .padding(.bottom, -110)
+                .padding(.bottom, -160)
             VStack(alignment: .center) {
                 HStack {
                     Text(landmark.name)
@@ -38,15 +38,15 @@ struct LandmarkDetail: View {
                     }
                 }
             }
-            .offset(x: 0, y: -50)
-            .padding(.bottom, -50)
+            .offset(x: 0, y: 0)
+            .padding(.bottom, 0)
             if landmark.explanation == nil {
-                HStack {
-                    Text ("Расписание Богослужений:")
-                        .padding(.leading)
-                    Spacer()
-                }
-                List{
+               
+                Form {
+                    HStack {
+                        Text ("Расписание Богослужений:").bold() 
+                        Spacer()
+                    }
                     VStack(alignment: .leading) {
                         Text ("Понедельник:")
                         Text (landmark.timeTable!.monday.morning)
@@ -79,7 +79,8 @@ struct LandmarkDetail: View {
                 NavigationLink(
                     destination: TimetableView(landmark: landmark)
                         .environmentObject(self.userData)
-                )               {  Text ("(посмотреть подробное расписание)") .font(.subheadline)
+                )
+                {  Text ("(посмотреть подробное расписание)") .font(.subheadline)
                 }
             }
         }

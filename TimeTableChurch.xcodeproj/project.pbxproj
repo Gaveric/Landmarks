@@ -157,11 +157,11 @@
 				CE066C192456A43600ED1C0D /* Resources */,
 				B739487E229F282200C47603 /* Models */,
 				B73948A0229F2E1F00C47603 /* LandmarkList.swift */,
+				CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */,
 				CECBCB7824BECE29007947C5 /* FooterView.swift */,
 				CE0D793824B5D7EA00D6EE3E /* CategoryRowOLD.swift */,
 				B739489E229F2D9700C47603 /* LandmarkRow.swift */,
 				B7394869229F194000C47603 /* LandmarkDetailOLD.swift */,
-				CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */,
 				CE8E762B242B83760065DD08 /* TimetableView.swift */,
 				CE066C3B2456E40D00ED1C0D /* WebView.swift */,
 				B739487D229F1C0100C47603 /* Supporting Views */,
@@ -273,9 +273,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7394861229F194000C47603 /* Landmarks */ = {
+		B7394861229F194000C47603 /* TimeTableChirch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "Landmarks" */;
+			buildConfigurationList = B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "TimeTableChirch" */;
 			buildPhases = (
 				B739485E229F194000C47603 /* Sources */,
 				B739485F229F194000C47603 /* Frameworks */,
@@ -285,7 +285,7 @@
 			);
 			dependencies = (
 			);
-			name = Landmarks;
+			name = TimeTableChirch;
 			productName = Landmarks;
 			productReference = B7394862229F194000C47603 /* TimeTableChirch.app */;
 			productType = "com.apple.product-type.application";
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B739485D229F194000C47603 /* Build configuration list for PBXProject "HandlingUserInput" */;
+			buildConfigurationList = B739485D229F194000C47603 /* Build configuration list for PBXProject "TimeTableChurch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -318,7 +318,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7394861229F194000C47603 /* Landmarks */,
+				B7394861229F194000C47603 /* TimeTableChirch */,
 			);
 		};
 /* End PBXProject section */
@@ -556,7 +556,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B739485D229F194000C47603 /* Build configuration list for PBXProject "HandlingUserInput" */ = {
+		B739485D229F194000C47603 /* Build configuration list for PBXProject "TimeTableChurch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7394874229F194200C47603 /* Debug */,
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "Landmarks" */ = {
+		B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "TimeTableChirch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7394877229F194200C47603 /* Debug */,
