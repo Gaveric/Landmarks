@@ -33,6 +33,7 @@
 		CE0D793924B5D7EA00D6EE3E /* CategoryRowOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D793824B5D7EA00D6EE3E /* CategoryRowOLD.swift */; };
 		CE4C0F4A2475555000A5ACAA /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */; };
 		CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */; };
+		CE81674024F7DA4F00EA6938 /* landmarkData3.json in Resources */ = {isa = PBXBuildFile; fileRef = CE81673F24F7DA4F00EA6938 /* landmarkData3.json */; };
 		CE83FD8524E264F9000DF202 /* Sretenie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE83FD8424E264F9000DF202 /* Sretenie.jpg */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
 		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
@@ -48,7 +49,7 @@
 /* Begin PBXFileReference section */
 		6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		8016A7122042026B58FF1299 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		B7394862229F194000C47603 /* TimeTableChirch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableChirch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7394862229F194000C47603 /* Расписание богослужений.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Расписание богослужений.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7394865229F194000C47603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7394867229F194000C47603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B7394869229F194000C47603 /* LandmarkDetailOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailOLD.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		CE0D793824B5D7EA00D6EE3E /* CategoryRowOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRowOLD.swift; sourceTree = "<group>"; };
 		CE4C0F492475555000A5ACAA /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		CE81673F24F7DA4F00EA6938 /* landmarkData3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData3.json; sourceTree = "<group>"; };
 		CE83FD6E24E2641B000DF202 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = icons/Icon.png; sourceTree = SOURCE_ROOT; };
 		CE83FD6F24E2641B000DF202 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "icons/Icon-Small-50@2x.png"; sourceTree = SOURCE_ROOT; };
 		CE83FD7024E2641B000DF202 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "icons/Icon-Small.png"; sourceTree = SOURCE_ROOT; };
@@ -144,7 +146,7 @@
 		B7394863229F194000C47603 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7394862229F194000C47603 /* TimeTableChirch.app */,
+				B7394862229F194000C47603 /* Расписание богослужений.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +208,7 @@
 		CE066C192456A43600ED1C0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE81673F24F7DA4F00EA6938 /* landmarkData3.json */,
 				CE30C2F824C04DBB00FB5688 /* icons */,
 				CE0D790724B45A8500D6EE3E /* Photo */,
 				CEB67CB7249641DB0046CF0D /* landmarkData.json */,
@@ -273,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7394861229F194000C47603 /* TimeTableChirch */ = {
+		B7394861229F194000C47603 /* Расписание богослужений */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "TimeTableChirch" */;
+			buildConfigurationList = B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "Расписание богослужений" */;
 			buildPhases = (
 				B739485E229F194000C47603 /* Sources */,
 				B739485F229F194000C47603 /* Frameworks */,
@@ -285,9 +288,9 @@
 			);
 			dependencies = (
 			);
-			name = TimeTableChirch;
+			name = "Расписание богослужений";
 			productName = Landmarks;
-			productReference = B7394862229F194000C47603 /* TimeTableChirch.app */;
+			productReference = B7394862229F194000C47603 /* Расписание богослужений.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +308,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B739485D229F194000C47603 /* Build configuration list for PBXProject "TimeTableChurch" */;
+			buildConfigurationList = B739485D229F194000C47603 /* Build configuration list for PBXProject "TimeTableChirch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -318,7 +321,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7394861229F194000C47603 /* TimeTableChirch */,
+				B7394861229F194000C47603 /* Расписание богослужений */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +341,7 @@
 				CE0D791524B47AD100D6EE3E /* NikolaStanovaia.jpg in Resources */,
 				B739486F229F194200C47603 /* Preview Assets.xcassets in Resources */,
 				CE0D791024B47AD100D6EE3E /* PokrovaSarapulka.jpg in Resources */,
+				CE81674024F7DA4F00EA6938 /* landmarkData3.json in Resources */,
 				CE83FD8524E264F9000DF202 /* Sretenie.jpg in Resources */,
 				CE0D791424B47AD100D6EE3E /* UspeniaVP.jpg in Resources */,
 				CE0D79022496433F00D6EE3E /* umbagog.jpg in Resources */,
@@ -523,7 +527,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
-				PRODUCT_NAME = TimeTableChirch;
+				PRODUCT_NAME = "Расписание богослужений";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -546,7 +550,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
-				PRODUCT_NAME = TimeTableChirch;
+				PRODUCT_NAME = "Расписание богослужений";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -556,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B739485D229F194000C47603 /* Build configuration list for PBXProject "TimeTableChurch" */ = {
+		B739485D229F194000C47603 /* Build configuration list for PBXProject "TimeTableChirch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7394874229F194200C47603 /* Debug */,
@@ -565,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "TimeTableChirch" */ = {
+		B7394876229F194200C47603 /* Build configuration list for PBXNativeTarget "Расписание богослужений" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7394877229F194200C47603 /* Debug */,

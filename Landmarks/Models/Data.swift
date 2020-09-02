@@ -7,7 +7,7 @@ extension Color {
     static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
 }
 
-var landmarkData: [Landmark] = load("landmarkData2.json")
+var landmarkData: [Landmark] = load("landmarkData3.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
      
