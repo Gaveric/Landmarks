@@ -11,65 +11,99 @@ struct LandmarkList: View {
             NavigationView {
                 VStack {
                     Form {
-                      HStack (alignment: .center){
-                        VStack (alignment: .leading){
-                            Text("Храмы")
-                                .font(.largeTitle)
-                                .fontWeight(.semibold)
-                            Text("Екатеринбургской епархии")
-                                .font(.headline)
-                        }.padding(.leading)
-                        Spacer()
-                        ImageStore.shared.image(name: "DefaultPhoto")
+                        
+                        // MARK: - Шапка фото
+                        HStack (alignment: .center){
+                            VStack (alignment: .leading){
+                                Text("Храмы")//.font(.system(.headline, design: .rounded))
+                                    .font(.largeTitle)
+                                    .fontWeight(.semibold)
+                                Text("Екатеринбургской епархии")
+                                    .font(.headline)
+                            }.padding(.leading)
+                            Spacer()
+                            ImageStore.shared.image(name: "DefaultPhoto")
                                 .resizable()
                                 .clipShape(Circle())
                                 .frame(width: 100, height: 100)
-                                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                                .shadow(radius: 10)
-                     }.frame( height:100)
-                    
+                                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                            //.shadow(radius: 10)
+                        }.frame( height:100)
+                        
+                        // MARK: - Кнопки
+                        
                         HStack {
                             HStack {
-                                ButtonRefresh()
-                                    .overlay(RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.gray, lineWidth: 0))
+                                RoundedRectangle(cornerRadius: 15)
+                                    .fill(Color.white)
+                                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))                                    .frame(width: 100, height: 50)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                    .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                                    .overlay(
+                                        ButtonRefresh().frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/, alignment: .center)
+                                )
                             }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/, alignment: .center)
                             Spacer()
-                            HStack {
-                                Toggle(isOn: $userData.showFavoritesOnly) {
-                                    Text("Только избранные")
-                                }
-                                .overlay(RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.gray, lineWidth: 0))
-                            }.frame(width: 160.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/)
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(Color.white)
+                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3)) // линия вокруг кнопки
+                                .frame(width: 190, height: 50)
+                                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                                .overlay(
+                                    HStack {
+                                        Toggle(isOn: $userData.showFavoritesOnly) {
+                                            
+                                            Text("Только избранные").foregroundColor(Color.black.opacity(0.7))
+                                        }
+                                    }.frame(width: 160.0, height: 60.0)
+                            )
+                            
                         }.font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.gray)
-                        .multilineTextAlignment(.center)
- 
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        // MARK: - Благочиния
+                        
                         ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
                             Section(
                                 header:
                                 HStack {
-                                    Text(key+" благочиние")
-                                        .frame(height: 50)
-                                        .font(.headline)
-                                        .padding(.leading, 15)
-                                        .padding(.top, 5)
-                                        .foregroundColor(Color(red: 0.1, green: 0.4, blue: 0.4, opacity: 1.0))
-                                    Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
+                                    
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .fill(Color.white)
+                                         .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
+                                        .frame(  height: 50)
+                                         .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                         .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                                        .overlay(
+                                            HStack {
+                                            Text(key+" благочиние")
+                                                .frame(height: 50)
+                                                .font(.headline)
+//                                                .padding(.leading, 15)
+//                                                .padding(.top, 5)
+                                            
+                                            
+                                            Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
+                                            }
+                                    ) // конец оверлея
+                                    
                                 }.onTapGesture {
                                     self.userData.expander[key]!.toggle()
                                 } )
                             { if self.userData.expander[key]! {
-                                    FooterView(items: self.userData.categories[key]!, key: key)
+                                FooterView(items: self.userData.categories[key]!, key: key)
                                 }
                             }
                         }
                     }.navigationBarTitle("Храмы")
-                    .navigationBarHidden(true)
-                }
-            }
+                        .navigationBarHidden(true)
+                }.edgesIgnoringSafeArea(.all)
+            }.colorMultiply(Color.offWhite)
         }
+        
     }
     
     func saveContext() {

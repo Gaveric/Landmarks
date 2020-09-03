@@ -6,6 +6,26 @@ import CoreData
 extension Color {
     static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
 }
+ 
+
+struct CheckboxToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        return HStack {
+            configuration.label
+            Spacer()
+            Image(systemName: configuration.isOn ? "checkmark.square" : "square")
+                .resizable()
+                .frame(width: 22, height: 22)
+                .onTapGesture { configuration.isOn.toggle() }
+        }
+    }
+}
+
+struct SimpleButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+    }
+}
 
 var landmarkData: [Landmark] = load("landmarkData3.json")
 

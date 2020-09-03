@@ -12,6 +12,8 @@ final class UserData: ObservableObject {
     
     init() {
         takeUrl()
+
+        
     }
     
     func makeCategories(landmarks: [Landmark]){
@@ -32,7 +34,9 @@ final class UserData: ObservableObject {
     func takeUrl () {
     
         
-        let url = URL(string:"https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
+        let url = URL(string:"https://api.jsonbin.io/b/5f3ba8124d93991036172dbc/latest")!
+            
+//            https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
             
             
             //https://files.fm/down.php?i=xt239puv")!

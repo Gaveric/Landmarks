@@ -16,6 +16,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        UISwitch.appearance().onTintColor = UIColor(red: 204/255, green:250/255, blue: 250/255, alpha: 0.99)
         let userData = UserData()
         userData.takeUrl()
         return true

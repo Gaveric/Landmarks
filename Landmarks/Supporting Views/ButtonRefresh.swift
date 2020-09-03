@@ -17,11 +17,11 @@ struct ButtonRefresh: View {
             dump(self.userData.categories.keys.sorted())
             self.userData.makeCategories(landmarks: self.userData.landmarks)
         })
-            //.font(.caption)
-            //.foregroundColor(.gray)
+            .foregroundColor(Color.black.opacity(0.7))
+      
             
-            //.overlay(RoundedRectangle(cornerRadius: 10)
-            //   .stroke(Color.gray, lineWidth: 1))
+//            .overlay(RoundedRectangle(cornerRadius: 15)
+//             .stroke(Color.gray, lineWidth: 1))
         
     }
 }
