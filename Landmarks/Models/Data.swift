@@ -4,7 +4,8 @@ import CoreLocation
 import CoreData
  
 extension Color {
-    static let offWhite = Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
+    static let offWhite = Color(red: 240 / 255, green: 250 / 255, blue: 248 / 255)
+    //Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
 }
  
 

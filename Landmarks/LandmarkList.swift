@@ -7,30 +7,37 @@ struct LandmarkList: View {
         UITableView.appearance().backgroundColor = UIColor(red: 204/255, green:255/255, blue: 255/255, alpha: 0.5)
     }
     var body: some View {
+        
         VStack {
+        Spacer()
+            
+            // Mark: - НавигейшнВью
+            
             NavigationView {
                 VStack {
-                    Form {
+                    VStack {
                         
-                        // MARK: - Шапка фото
-                        HStack (alignment: .center){
-                            VStack (alignment: .leading){
-                                Text("Храмы")//.font(.system(.headline, design: .rounded))
-                                    .font(.largeTitle)
-                                    .fontWeight(.semibold)
-                                Text("Екатеринбургской епархии")
-                                    .font(.headline)
-                            }.padding(.leading)
-                            Spacer()
-                            ImageStore.shared.image(name: "DefaultPhoto")
-                                .resizable()
-                                .clipShape(Circle())
-                                .frame(width: 100, height: 100)
-                                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-                            //.shadow(radius: 10)
-                        }.frame( height:100)
-                        
+            // MARK: - Шапка фото
+            HStack (alignment: .center){
+                VStack (alignment: .leading){
+                    Text("Храмы")//.font(.system(.headline, design: .rounded))
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                    Text("Екатеринбургской епархии")
+                        .font(.headline)
+                }.padding(.leading)
+                Spacer()
+                ImageStore.shared.image(name: "DefaultPhoto")
+                    .resizable()
+                    .clipShape(Circle())
+                    .frame(width: 80, height: 80)
+                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                    .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                //.shadow(radius: 10)
+            }.frame( height:80)
+            // .padding(.top, 50)
+            // .position(x: 0, y: 00)
+            
                         // MARK: - Кнопки
                         
                         HStack {
@@ -41,7 +48,15 @@ struct LandmarkList: View {
                                     .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
                                     .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
                                     .overlay(
-                                        ButtonRefresh().frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/, alignment: .center)
+                                        Button ("Обновить список", action: {
+                                            self.userData.takeUrl()
+                                            print ("ПРИНТ ПО КНОПКЕ")
+                                            self.userData.makeCategories(landmarks: self.userData.landmarks)
+                                        })
+                                            .foregroundColor(Color.black.opacity(0.7))
+                                        
+                                        
+                                        
                                 )
                             }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/, alignment: .center)
                             Spacer()
@@ -64,46 +79,52 @@ struct LandmarkList: View {
                             .multilineTextAlignment(.center)
                         
                         
+                        
                         // MARK: - Благочиния
                         
-                        ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
-                            Section(
-                                header:
-                                HStack {
-                                    
-                                    RoundedRectangle(cornerRadius: 15)
-                                        .fill(Color.white)
-                                         .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
-                                        .frame(  height: 50)
-                                         .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                                         .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-                                        .overlay(
-                                            HStack {
-                                            Text(key+" благочиние")
-                                                .frame(height: 50)
-                                                .font(.headline)
-//                                                .padding(.leading, 15)
-//                                                .padding(.top, 5)
-                                            
-                                            
-                                            Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
-                                            }
-                                    ) // конец оверлея
-                                    
-                                }.onTapGesture {
-                                    self.userData.expander[key]!.toggle()
-                                } )
-                            { if self.userData.expander[key]! {
-                                FooterView(items: self.userData.categories[key]!, key: key)
+                        Form {
+                            ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
+                                Section(
+                                    header:
+                                    HStack {
+                                        
+                                        RoundedRectangle(cornerRadius: 15)
+                                            .fill(Color.white)
+                                            .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
+                                            .frame(  height: 50)
+                                            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                            .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                                            .overlay(
+                                                HStack {
+                                                    Text(key+" благочиние")
+                                                        .frame(height: 50)
+                                                        .font(.headline)
+                                                    //                                                .padding(.leading, 15)
+                                                    //                                                .padding(.top, 5)
+                                                    Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
+                                                }
+                                        ) // конец оверлея
+                                        
+                                    }.onTapGesture {
+                                        self.userData.expander[key]!.toggle()
+                                    } )
+                                { if self.userData.expander[key]! {
+                                    FooterView(items: self.userData.categories[key]!, key: key)
+                                    }
                                 }
                             }
                         }
-                    }.navigationBarTitle("Храмы")
+                    }.navigationBarTitle("к списку")
                         .navigationBarHidden(true)
+                   // .navigationBarHidden(fullScreen)
+                    Spacer()
+                    
                 }.edgesIgnoringSafeArea(.all)
-            }.colorMultiply(Color.offWhite)
+                
+            }.padding(.top, -2.0).colorMultiply(Color.offWhite)
+       
+            
         }
-        
     }
     
     func saveContext() {
