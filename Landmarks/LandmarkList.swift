@@ -114,7 +114,7 @@ struct LandmarkList: View {
                                 }
                             }
                         }
-                    }.navigationBarTitle("к списку")
+                    }.navigationBarTitle("список храмов")
                         .navigationBarHidden(true)
                    // .navigationBarHidden(fullScreen)
                     Spacer()
