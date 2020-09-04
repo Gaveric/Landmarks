@@ -34,7 +34,10 @@
 		CE81674024F7DA4F00EA6938 /* landmarkData3.json in Resources */ = {isa = PBXBuildFile; fileRef = CE81673F24F7DA4F00EA6938 /* landmarkData3.json */; };
 		CE8167852502150000EA6938 /* UspenskiVIZ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE8167832502150000EA6938 /* UspenskiVIZ.jpg */; };
 		CE8167862502150000EA6938 /* VerhoturieSimeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE8167842502150000EA6938 /* VerhoturieSimeon.jpg */; };
-		CE81678825021F0F00EA6938 /* Kurganovo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE81678725021F0F00EA6938 /* Kurganovo.jpg */; };
+		CE81678B250243CD00EA6938 /* BlagoFavoritView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81678A250243CD00EA6938 /* BlagoFavoritView.swift */; };
+		CE81678D250254A000EA6938 /* Kurganovo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE81678C250254A000EA6938 /* Kurganovo.jpg */; };
+		CE81678F2502555800EA6938 /* Koltsovo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE81678E2502555800EA6938 /* Koltsovo.jpg */; };
+		CE816791250256D300EA6938 /* GaninaYama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE816790250256D300EA6938 /* GaninaYama.jpg */; };
 		CE83FD8524E264F9000DF202 /* Sretenie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE83FD8424E264F9000DF202 /* Sretenie.jpg */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
 		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
@@ -48,7 +51,7 @@
 /* Begin PBXFileReference section */
 		6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		8016A7122042026B58FF1299 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		B7394862229F194000C47603 /* timeTableChirch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeTableChirch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7394862229F194000C47603 /* TimeTableChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTableChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7394865229F194000C47603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7394867229F194000C47603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B739486B229F194200C47603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +81,10 @@
 		CE81673F24F7DA4F00EA6938 /* landmarkData3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData3.json; sourceTree = "<group>"; };
 		CE8167832502150000EA6938 /* UspenskiVIZ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UspenskiVIZ.jpg; sourceTree = "<group>"; };
 		CE8167842502150000EA6938 /* VerhoturieSimeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VerhoturieSimeon.jpg; sourceTree = "<group>"; };
-		CE81678725021F0F00EA6938 /* Kurganovo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kurganovo.jpg; sourceTree = "<group>"; };
+		CE81678A250243CD00EA6938 /* BlagoFavoritView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlagoFavoritView.swift; sourceTree = "<group>"; };
+		CE81678C250254A000EA6938 /* Kurganovo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Kurganovo.jpg; path = "../../../../../../Новые иконки 31-08-2020/Kurganovo.jpg"; sourceTree = "<group>"; };
+		CE81678E2502555800EA6938 /* Koltsovo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Koltsovo.jpg; sourceTree = "<group>"; };
+		CE816790250256D300EA6938 /* GaninaYama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GaninaYama.jpg; sourceTree = "<group>"; };
 		CE83FD6E24E2641B000DF202 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = icons/Icon.png; sourceTree = SOURCE_ROOT; };
 		CE83FD6F24E2641B000DF202 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "icons/Icon-Small-50@2x.png"; sourceTree = SOURCE_ROOT; };
 		CE83FD7024E2641B000DF202 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "icons/Icon-Small.png"; sourceTree = SOURCE_ROOT; };
@@ -144,7 +150,7 @@
 		B7394863229F194000C47603 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7394862229F194000C47603 /* timeTableChirch.app */,
+				B7394862229F194000C47603 /* TimeTableChurch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 				CE8E7631242CAEED0065DD08 /* PDFKitView.swift */,
 				CEA4D83A24C6AFCB00BCDE04 /* ButtonRefresh.swift */,
 				CE066C3B2456E40D00ED1C0D /* WebView.swift */,
+				CE81678A250243CD00EA6938 /* BlagoFavoritView.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -216,10 +223,12 @@
 			isa = PBXGroup;
 			children = (
 				CE8167832502150000EA6938 /* UspenskiVIZ.jpg */,
-				CE81678725021F0F00EA6938 /* Kurganovo.jpg */,
 				CE8167842502150000EA6938 /* VerhoturieSimeon.jpg */,
+				CE81678C250254A000EA6938 /* Kurganovo.jpg */,
 				CE83FD8424E264F9000DF202 /* Sretenie.jpg */,
 				CEB67CB9249641DB0046CF0D /* uspenskiPrihod.jpg */,
+				CE816790250256D300EA6938 /* GaninaYama.jpg */,
+				CE81678E2502555800EA6938 /* Koltsovo.jpg */,
 				CE0D790C24B47AD100D6EE3E /* DefaultPhoto.jpg */,
 				CE0D78FF2496426C00D6EE3E /* Default.jpg */,
 				CE0D790A24B47AD100D6EE3E /* IoanaVoina.jpg */,
@@ -287,7 +296,7 @@
 			);
 			name = "Расписание богослужений";
 			productName = Landmarks;
-			productReference = B7394862229F194000C47603 /* timeTableChirch.app */;
+			productReference = B7394862229F194000C47603 /* TimeTableChurch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -337,11 +346,13 @@
 				CE0D791324B47AD100D6EE3E /* DefaultPhoto.jpg in Resources */,
 				CE0D791524B47AD100D6EE3E /* NikolaStanovaia.jpg in Resources */,
 				B739486F229F194200C47603 /* Preview Assets.xcassets in Resources */,
+				CE81678D250254A000EA6938 /* Kurganovo.jpg in Resources */,
 				CE0D791024B47AD100D6EE3E /* PokrovaSarapulka.jpg in Resources */,
-				CE81678825021F0F00EA6938 /* Kurganovo.jpg in Resources */,
+				CE81678F2502555800EA6938 /* Koltsovo.jpg in Resources */,
 				CE8167852502150000EA6938 /* UspenskiVIZ.jpg in Resources */,
 				CE81674024F7DA4F00EA6938 /* landmarkData3.json in Resources */,
 				CE83FD8524E264F9000DF202 /* Sretenie.jpg in Resources */,
+				CE816791250256D300EA6938 /* GaninaYama.jpg in Resources */,
 				CE0D791424B47AD100D6EE3E /* UspeniaVP.jpg in Resources */,
 				CE0D79022496433F00D6EE3E /* umbagog.jpg in Resources */,
 				CE0D79002496426C00D6EE3E /* Default.jpg in Resources */,
@@ -363,6 +374,7 @@
 				CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */,
 				B7394866229F194000C47603 /* AppDelegate.swift in Sources */,
 				B739487A229F1B3F00C47603 /* CircleImage.swift in Sources */,
+				CE81678B250243CD00EA6938 /* BlagoFavoritView.swift in Sources */,
 				CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */,
 				CEA0A45F248E493E00988E23 /* Stars+CoreDataClass.swift in Sources */,
 				CEA4D83B24C6AFCB00BCDE04 /* ButtonRefresh.swift in Sources */,
@@ -396,6 +408,7 @@
 			baseConfigurationReference = 6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -457,6 +470,7 @@
 			baseConfigurationReference = 6AF17FBC250C47AD4B5BC2FB /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -514,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "Landmarks/Preview\\ Content";
 				DEVELOPMENT_TEAM = GS96V2X2Y2;
 				ENABLE_PREVIEWS = YES;
@@ -522,8 +537,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
-				PRODUCT_NAME = timeTableChirch;
+				PRODUCT_NAME = TimeTableChurch;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -537,6 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "Landmarks/Preview\\ Content";
 				DEVELOPMENT_TEAM = GS96V2X2Y2;
 				ENABLE_PREVIEWS = YES;
@@ -545,8 +562,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
-				PRODUCT_NAME = timeTableChirch;
+				PRODUCT_NAME = TimeTableChurch;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

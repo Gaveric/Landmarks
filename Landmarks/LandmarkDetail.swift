@@ -31,7 +31,7 @@ struct LandmarkDetail: View {
                         
                         HStack {
                             Text(landmark.name)
-                                .font(.title)
+                                .font(.headline)
                             Button(action: {
                                 self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
                                 dump(self.userData.landmarks[self.landmarkIndex].isFavorite)
@@ -58,7 +58,7 @@ struct LandmarkDetail: View {
             
             //            Mark: Расписание
             
-            if landmark.explanation == nil {
+            if landmark.explanation == nil && landmark.timeTable != nil {
                 
                 VStack (alignment: .leading){
                     Spacer()
@@ -69,21 +69,21 @@ struct LandmarkDetail: View {
                     Spacer()
                     
                     VStack(alignment: .leading) {
-                        Text ("Понедельник:")
+                        Text ("Понедельник:").bold()
                         Text (landmark.timeTable!.monday.morning)
                         Text (landmark.timeTable!.monday.evening)
                         Spacer()
                     }
                     
                     VStack(alignment: .leading) {
-                        Text ("Вторник-Пятница:")
+                        Text ("Вторник-Пятница:").bold()
                         Text (landmark.timeTable!.tuesdayFriday.morning)
                         Text (landmark.timeTable!.tuesdayFriday.evening)
                         Spacer()
                     }
                     
                     VStack (alignment: .leading) {
-                        Text ("Суббота")
+                        Text ("Суббота").bold()
                         Text (landmark.timeTable!.saturday.morning)
                         Text (landmark.timeTable!.saturday.evening)
                         Spacer()
@@ -91,14 +91,19 @@ struct LandmarkDetail: View {
                     
                     
                     VStack(alignment: .leading) {
-                        Text ("Воскресение:")
+                        Text ("Воскресение:").bold()
                         Text (landmark.timeTable!.sunday.morning)
                         Text (landmark.timeTable!.sunday.evening)
                         Spacer()
                     }
                     
                 } // List end
-                    .font(.system(size: 12))
+                    .font(.body)
+            } else if landmark.explanation == nil && landmark.timeTable == nil{
+                WebView (url: landmark.park).padding()
+                .edgesIgnoringSafeArea(.top)
+                .offset(x: 0, y: -20)
+                .padding(.top, -20)
             }
             else {
                 Text (landmark.explanation!)
@@ -107,6 +112,8 @@ struct LandmarkDetail: View {
             
             Spacer()
             
+            
+            if landmark.explanation != nil || landmark.timeTable != nil {
             VStack {
                 RoundedRectangle(cornerRadius: 15)
                     .fill(Color.white)
@@ -129,6 +136,7 @@ struct LandmarkDetail: View {
                 )
             }
             .padding(.bottom)
+            }
         }
     }
 }
@@ -140,3 +148,6 @@ struct LandmarkDetail_Preview: PreviewProvider {
             .environmentObject(userData)
     }
 }
+
+
+

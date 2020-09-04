@@ -82,43 +82,50 @@ struct LandmarkList: View {
                         
                         // MARK: - Благочиния
                         
-                        Form {
-                            ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
-                                Section(
-                                    header:
-                                    HStack {
-                                        
-                                        RoundedRectangle(cornerRadius: 15)
-                                            .fill(Color.white)
-                                            .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
-                                            .frame(  height: 50)
-                                            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                                            .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-                                            .overlay(
-                                                HStack {
-                                                    Text(key+" благочиние")
-                                                        .frame(height: 50)
-                                                        .font(.headline)
-                                                    //                                                .padding(.leading, 15)
-                                                    //                                                .padding(.top, 5)
-                                                    Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
-                                                }
-                                        ) // конец оверлея
-                                        
-                                    }.onTapGesture {
-                                        self.userData.expander[key]!.toggle()
-                                    } )
-                                { if self.userData.expander[key]! {
-                                    FooterView(items: self.userData.categories[key]!, key: key)
-                                    }
-                                }
-                            }
-                        }
+//                        Form {
+//                            ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
+//                                Section(
+//                                    header:
+//                                    HStack {
+//
+//                                        RoundedRectangle(cornerRadius: 15)
+//                                            .fill(Color.white)
+//                                            .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
+//                                            .frame(  height: 50)
+//                                            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+//                                            .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+//                                            .overlay(
+//                                                HStack {
+//                                                    Text(key+" благочиние")
+//                                                        .frame(height: 50)
+//                                                        .font(.headline)
+//                                                    Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
+//                                                }
+//                                        ) // конец оверлея
+//
+//                                    }.onTapGesture {
+//                                        self.userData.expander[key]!.toggle()
+//                                    } )
+//                                { if self.userData.expander[key]! {
+//                                    FooterView(items: self.userData.categories[key]!, key: key)
+//                                    }
+//                                }
+//                            }
+//                        }
+                        
+
+//                     
+                   
+
+
+                        BlagoFavoritView()
+                        
+                        
+             //__________________
+                        
                     }.navigationBarTitle("список храмов")
                         .navigationBarHidden(true)
-                   // .navigationBarHidden(fullScreen)
                     Spacer()
-                    
                 }.edgesIgnoringSafeArea(.all)
                 
             }.padding(.top, -2.0).colorMultiply(Color.offWhite)
