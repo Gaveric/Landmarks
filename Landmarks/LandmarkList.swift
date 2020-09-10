@@ -70,7 +70,8 @@ struct LandmarkList: View {
                             
                         }.font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
-                        
+                         .colorMultiply(Color.offWhite)
+
                         // MARK: - Благочиния
                         
                         //                        Form {
@@ -108,8 +109,7 @@ struct LandmarkList: View {
                         
                     }.navigationBarTitle("список храмов")
                         .navigationBarHidden(true)
-                   // .colorMultiply(Color.offWhite)
-
+                   
                     Spacer()
                 }.edgesIgnoringSafeArea(.all)
                 

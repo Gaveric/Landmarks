@@ -99,7 +99,8 @@ struct BlagoFavoritView: View {
                 
             } // else
             
-        } // form
+        }
+            .foregroundColor(.offBlack) // form
 
         
 }//body
