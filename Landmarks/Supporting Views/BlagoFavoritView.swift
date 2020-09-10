@@ -63,8 +63,8 @@ struct BlagoFavoritView: View {
                         header:
                         HStack {
                             RoundedRectangle(cornerRadius: 15)
-                                .fill(Color.white)
-                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
+                                .fill(Color.offBlue)
+                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.09))
                                 .frame(  height: 50)
                                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
                                 .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)

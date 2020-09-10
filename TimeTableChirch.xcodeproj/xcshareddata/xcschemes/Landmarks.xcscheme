@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B7394861229F194000C47603"
-               BuildableName = "timeTableChirch.app"
+               BuildableName = "TimeTableChurch.app"
                BlueprintName = "&#x420;&#x430;&#x441;&#x43f;&#x438;&#x441;&#x430;&#x43d;&#x438;&#x435; &#x431;&#x43e;&#x433;&#x43e;&#x441;&#x43b;&#x443;&#x436;&#x435;&#x43d;&#x438;&#x439;"
                ReferencedContainer = "container:TimeTableChirch.xcodeproj">
             </BuildableReference>
@@ -49,7 +49,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B7394861229F194000C47603"
-            BuildableName = "timeTableChirch.app"
+            BuildableName = "TimeTableChurch.app"
             BlueprintName = "&#x420;&#x430;&#x441;&#x43f;&#x438;&#x441;&#x430;&#x43d;&#x438;&#x435; &#x431;&#x43e;&#x433;&#x43e;&#x441;&#x43b;&#x443;&#x436;&#x435;&#x43d;&#x438;&#x439;"
             ReferencedContainer = "container:TimeTableChirch.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B7394861229F194000C47603"
-            BuildableName = "timeTableChirch.app"
+            BuildableName = "TimeTableChurch.app"
             BlueprintName = "&#x420;&#x430;&#x441;&#x43f;&#x438;&#x441;&#x430;&#x43d;&#x438;&#x435; &#x431;&#x43e;&#x433;&#x43e;&#x441;&#x43b;&#x443;&#x436;&#x435;&#x43d;&#x438;&#x439;"
             ReferencedContainer = "container:TimeTableChirch.xcodeproj">
          </BuildableReference>

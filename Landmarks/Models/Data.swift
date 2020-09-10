@@ -4,7 +4,9 @@ import CoreLocation
 import CoreData
  
 extension Color {
-    static let offWhite = Color(red: 240 / 255, green: 250 / 255, blue: 248 / 255)
+    static let offWhite = Color(red: 0.96, green: 0.96, blue: 0.96)
+    static let offBlue = Color(red: 0.93, green: 0.96, blue: 0.97)
+
     //Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
 }
  
@@ -119,6 +121,22 @@ final class ImageStore {
 }
 struct Data_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+       
+        ZStack {
+        RoundedRectangle(cornerRadius: 15)
+            .fill(Color.offWhite)
+            .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3)) // линия вокруг кнопки
+            .frame(width: 190, height: 50)
+            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+            .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+            .overlay(
+                VStack {
+                    Text("Hello, World!")
+                }
+        )
+        }//.foregroundColor(Color.offBlue)
+
     }
 }
+
+
