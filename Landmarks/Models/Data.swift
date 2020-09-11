@@ -7,6 +7,8 @@ extension Color {
     static let offWhite = Color(red: 0.96, green: 0.96, blue: 0.96)
     static let offBlue = Color(red: 0.93, green: 0.96, blue: 0.97)
     static let offBlack = Color(red: 0.3, green: 0.3, blue: 0.3)
+    static let offYellow = Color(red: 0.99, green: 0.99, blue: 0.87)
+    
 
     //Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
 }

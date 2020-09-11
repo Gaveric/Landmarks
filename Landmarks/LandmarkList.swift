@@ -3,9 +3,9 @@ struct LandmarkList: View {
     @EnvironmentObject private var userData: UserData
     @Environment(\.managedObjectContext) var managedObjectContext
     @State var expand = false
-    //    init(){
-    //        UITableView.appearance().backgroundColor = UIColor(red: 204/255, green:255/255, blue: 255/255, alpha: 0.5)
-    //    }
+       init(){
+        UITableView.appearance().backgroundColor =  UIColor(red: 240/255, green:240/255, blue: 249/255, alpha: 0.5)
+        }
     var body: some View {
         
         VStack {
@@ -15,6 +15,7 @@ struct LandmarkList: View {
             
             NavigationView {
                 VStack {
+                    
                     VStack {
                         
                         // MARK: - Шапка фото
@@ -32,14 +33,14 @@ struct LandmarkList: View {
                                 .clipShape(Circle())
                                 .frame(width: 80, height: 80)
                                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5) }.frame( height:80)
+                                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5) }.padding(.trailing, 18.0).frame( height:80)
                         
                         // MARK: - Кнопки
                         
                         HStack {
                             HStack { // Кнопка 1
                                 RoundedRectangle(cornerRadius: 15)
-                                    .fill(Color.offWhite) // ____________ цвет 1 кнопки
+                                    .fill(Color.offYellow) // ____________ цвет 1 кнопки
                                     .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.11))                                    .frame(width: 100, height: 50)
                                     .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
                                     .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
@@ -51,26 +52,31 @@ struct LandmarkList: View {
                                         })
                                             .foregroundColor(Color.black.opacity(0.7))
                                 )
-                            }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/, alignment: .center)
-                            Spacer() // Кнопка 2
-                            RoundedRectangle(cornerRadius: 15)
-                                .fill(Color.offWhite)// ____________ цвет 2 кнопки
-                                .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.11)) // линия вокруг кнопки
-                                .frame(width: 190, height: 50)
-                                .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                                .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-                                .overlay(
-                                    HStack {
-                                        Toggle(isOn: $userData.showFavoritesOnly) {
-                                            
-                                            Text("Только избранные").foregroundColor(Color.black.opacity(0.7))
-                                        }
-                                    }.frame(width: 160.0, height: 60.0)
-                            )
+                            }.frame(width: 130.0, height: /*@START_MENU_TOKEN@*/60.0/*@END_MENU_TOKEN@*/)//, alignment: .center)
+                                 Spacer()
+                            // Кнопка 2
+                            HStack {
+                                RoundedRectangle(cornerRadius: 15)
+                                    .fill(Color.offYellow)// ____________ цвет 2 кнопки
+                                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.11)) // линия вокруг кнопки
+                                    .frame(width: 190, height: 50)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                    .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                                    .overlay(
+                                        HStack {
+                                            Toggle(isOn: $userData.showFavoritesOnly) {
+                                                
+                                                Text("Только избранные").foregroundColor(Color.black.opacity(0.7))
+                                            }
+                                        }.frame(width: 160.0, height: 60.0)
+                                )
+                            }
                             
-                        }.font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/)
+                        } .padding(.trailing, 19.0)
+                       
+                        .font(/*@START_MENU_TOKEN@*/.body/*@END_MENU_TOKEN@*/)
                             .multilineTextAlignment(.center)
-                         .colorMultiply(Color.offWhite)
+                         
 
                         // MARK: - Благочиния
                         

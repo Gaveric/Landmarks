@@ -9,11 +9,8 @@ final class UserData: ObservableObject {
     @Published var categories: [String: [Landmark]] = [:]
     @Published var expander = [String: Bool] ()
     
-    
     init() {
         takeUrl()
-
-        
     }
     
     func makeCategories(landmarks: [Landmark]){
@@ -23,7 +20,7 @@ final class UserData: ObservableObject {
         )
         dump (categories.count)
         print ("     ________________categories________________")
-            }
+    }
     
     func makeExpander() {
         expander = Dictionary (uniqueKeysWithValues: zip(categories.keys, Array(repeating: false, count: categories.keys.count)))
@@ -32,19 +29,13 @@ final class UserData: ObservableObject {
     }
     
     func takeUrl () {
-    
+        let url = URL(string:"https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
         
-        let url = URL(string:"https://api.jsonbin.io/b/5f3ba8124d93991036172dbc/latest")!
-            
-//            https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
-            
-            
+            //            https://api.jsonbin.io/b/5f3ba8124d93991036172dbc/latest")!
             //https://files.fm/down.php?i=xt239puv")!
-                      // https://files.progressman.ru/landmarkData.json")!
-       
-//https://api.jsonbin.io/b/5f3ba62fb88c04101cf64a4e/latest
-//        guard let url1 = URL(string: "https://api.lucidtech.ai/v0/receipts"),
-
+            // https://files.progressman.ru/landmarkData.json")!
+            //https://api.jsonbin.io/b/5f3ba62fb88c04101cf64a4e/latest
+            //        guard let url1 = URL(string: "https://api.lucidtech.ai/v0/receipts"),
         
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             do {
@@ -65,9 +56,7 @@ final class UserData: ObservableObject {
                             
                             self.makeCategories(landmarks: self.landmarks)
                             self.makeExpander()
-
                         }
-                        
                     }
                 } else {
                     print("No data")

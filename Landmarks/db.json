@@ -1,0 +1,400 @@
+[
+    
+
+  {
+    "name": "Успения пр.Богородицы",
+    "category": "Березовское благочиние",
+    "state": "г.Березовский",
+    "id": 1001,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://uspenski.cerkov.ru/files/2013/10/Rasp.pdf",
+    "explanation": null,
+    "timeTable": {
+      "monday": {
+        "morning": "8-00 - Утреня.Вечерня.Литургия",
+        "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+      },
+      "tuesdayFriday": {
+        "morning": "8-30 - Литургия",
+        "evening": "16-00 - Утреня.Вечерня.(Всенощное бдение)"
+      },
+      "saturday": {
+        "morning": "8-30 - Литургия",
+        "evening": "16-00 - Всенощное бдение"
+      },
+      "sunday": {
+        "morning": "8-30 - Литургия",
+        "evening": "Утреня и Вечерня служится в понедельник"
+      }
+    },
+    "coordinates": {
+      "latitude": 56.911541,
+      "longitude": 60.806326
+    },
+    "imageName": "uspenskiPrihod"
+  },
+  {
+    "name": "Сретения Господня",
+    "category": "Березовское благочиние",
+    "state": "п.Старопышмкинск",
+    "id": 1002,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://sretenye.cerkov.ru/raspisanie-bogosluzhenij/",
+    "explanation": "Литургия совершается в храме в 9-00 каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии в 16-00 совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7(953)03-87-44.",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.932817,
+      "longitude": 60.901174
+    },
+    "imageName": "Sretenie"
+  },
+  {
+    "name": "Всех Святых",
+    "category": "Всехсвятское благочиние",
+    "state": "г. Екатеринбург",
+    "id": 1003,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "https://храмвсехсвятых.рф/1262",
+    "timeTable": {
+      "monday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Утреня.Вечерня.(Всенощное бдение)"
+      },
+      "tuesdayFriday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Утреня.Вечерня.(Всенощное бдение)"
+      },
+      "saturday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Всенощное бдение"
+      },
+      "sunday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Утреня.Вечерня.(Всенощное бдение)"
+      }
+    },
+    "coordinates": {
+      "latitude": 56.847929,
+      "longitude": 60.637494
+    },
+    "imageName": "VsehSviatih"
+  },
+  
+  
+  {
+     "name": "Троицкий Собор",
+     "category": "Всехсвятское благочиние",
+     "state": "г. Екатеринбург",
+     "id": 1016,
+     "isFeatured": false,
+     "isFavorite": false,
+     "park": "http://st-tks.ru/bogosluzheniya/raspisanie-bogosluzheniy/",
+     "timeTable": {
+       "monday": {
+         "morning": "8-00 - Литургия",
+         "evening": "17-00 - Вечернее богослужение. Исповедь"
+       },
+       "tuesdayFriday": {
+         "morning": "8-00 - Литургия",
+         "evening": "17-00 - Вечернее богослужение. Исповедь"
+       },
+       "saturday": {
+         "morning": "8-00 - Литургия",
+         "evening": "17-00 - Вечернее богослужение. Исповедь"
+       },
+       "sunday": {
+         "morning": "7-00 - Рання Литургия, 9-00 - Поздняя Литургия",
+         "evening": "17-00 - Вечернее богослужение. Исповедь"
+       }
+     },
+     "coordinates": {
+       "latitude": 56.827325,
+       "longitude": 60.614382
+     },
+     "imageName": "TroitskiySobor"
+   },
+  
+  {
+    "name": "Храм-на-Крови",
+    "category": "Всехсвятское благочиние",
+    "state": "г. Екатеринбург",
+    "id": 1017,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://xram-na-krovi.ru/расписние-богослужений/",
+    "timeTable": {
+      "monday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Вечернее богослужение. Исповедь"
+      },
+      "tuesdayFriday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Вечернее богослужение. Исповедь"
+      },
+      "saturday": {
+        "morning": "8-00 - Литургия",
+        "evening": "17-00 - Вечернее богослужение. Исповедь"
+      },
+      "sunday": {
+        "morning": "6-40 - Рання Литургия, 9-00 - Поздняя Литургия (8-00 - Литургия в храме свт. Николая",
+        "evening": "17-00 - Вечернее богослужение. Исповедь"
+      }
+    },
+    "coordinates": {
+      "latitude": 56.844376,
+      "longitude": 60.609048
+    },
+    "imageName": "HramNaKrovi"
+  },
+  
+  {
+     "name": "Храм Александра Невского",
+     "category": "Монастырское благочиние",
+     "state": "г. Екатеринбург",
+     "id": 1018,
+     "isFeatured": false,
+     "isFavorite": false,
+     "park": "http://www.sestry.ru/church/content/life/monastir/scheduleods",
+     "explanation": null,
+     "timeTable": {
+       "monday": {
+         "morning": "5-00 - Утреня. Часы. Литургия.",
+         "evening": "17-00 - Вечернее богослужение."
+       },
+       "tuesdayFriday": {
+         "morning": "5-00 - Литургия",
+         "evening": "17-00 - Вечернее богослужение. "
+       },
+       "saturday": {
+         "morning": "5-00 - Литургия",
+         "evening": "17-00 - Вечернее богослужение. "
+       },
+       "sunday": {
+         "morning": "6-30 - Рання Литургия, 9-00 - Поздняя Литургия",
+         "evening": "17-00 - Вечернее богослужение. Примечание: В двунадесятые праздники   в 6-30 служится Рання Литургия, в 9-00 - Поздняя Литургия."
+       }
+     },
+     
+     "editions": "Примечание: В двунадесятые праздники служатся в 6-30 - Рання Литургия, в 9-00 - Поздняя Литургия.",
+     
+     "coordinates": {
+       "latitude": 56.822900,
+       "longitude": 60.598730
+     },
+     "imageName": "AleksandraNevskogo"
+   },
+   
+  {
+    "name": "Св.Иоанна Воина",
+    "category": "Березовское благочиние",
+    "state": "п.Новоберезовский",
+    "id": 1004,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "https://st-ioann-voin.ru/?page_id=49",
+    "explanation": "Литургия совершается в храме в 9-00 каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии в 17-00 совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7 902 255 27 59.",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.892251,
+      "longitude": 60.744418
+    },
+    "imageName": "IoanaVoina"
+  },
+  {
+    "name": "Св.кн.Владимира",
+    "category": "Березовское благочиние",
+    "city": "Browning",
+    "state": "п.Монетный",
+    "id": 1005,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://hram-monetniy.cerkov.ru",
+    "explanation": "Литургия совершается в храме каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7 (904) 176 5878",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 57.062701,
+      "longitude": 60.9105
+    },
+    "imageName": "VladimiraMonetniy"
+  },
+  {
+    "name": "Николая Чудотворца",
+    "category": "Березовское благочиние",
+    "state": "п. Становая",
+    "id": 1006,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://stanovaj.cerkov.ru/kontakty/",
+    "explanation": "Литургия совершается в храме каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7 909 000 7337",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.898381,
+      "longitude": 61.000322
+    },
+    "imageName": "NikolaStanovaia"
+  },
+  {
+    "name": "Покрова пр. Богородицы",
+    "category": "Березовское благочиние",
+    "state": "п. Сарапулка",
+    "id": 1007,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://sarapulka.cerkov.ru/kontakty/",
+    "explanation": "Литургия совершается в храме каждую субботу и воскресение, в двунадесятые праздники, а также в дни памяти особо чтимых святых. В дни накануне Литургии совершаются вечерние богослужения. Уточнить о наличии в расписании богослужений  помимо субботы, воскресения, или двунадесятых праздников можно по тел. +7 909 000 7337",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.865912,
+      "longitude": 61.053687
+    },
+    "imageName": "PokrovaSarapulka"
+  },
+  {
+    "name": "Успения пр. Богородицы",
+    "category": "Верхнепышминское благочиние",
+    "state": "г. Верхняя Пышма",
+    "id": 1008,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "https://hramvp.info/time",
+    "timeTable": {
+      "monday": {
+        "morning": "8-30 - Литургия",
+        "evening": "17-00 - Утреня.Вечерня.(Всенощное бдение)"
+      },
+      "tuesdayFriday": {
+        "morning": "8-30 - Литургия",
+        "evening": "17-00 - Утреня.Вечерня.(Всенощное бдение)"
+      },
+      "saturday": {
+        "morning": "8-30 - Литургия",
+        "evening": "17-00 - Всенощное бдение"
+      },
+      "sunday": {
+        "morning": "8-30 - Литургия",
+        "evening": "17-00 - Утреня.Вечерня.(Всенощное бдение)"
+      }
+    },
+    "coordinates": {
+      "latitude": 56.958308,
+      "longitude": 60.592167
+    },
+    "imageName": "UspeniaVP"
+  },
+  {
+    "name": "Ганина Яма",
+    "category": "Монастырское благочиние",
+    "state": "г. Екатеринбург",
+    "id": 1010,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "https://ganinayama.ru/palomnikam/raspisanie-bogosluzheniy",
+    "explanation": "Вечернее богослужение совершается в 17:00, Литургия в будние дни - в 6:30; в субботу - 6:00 и 6:30 (с утреней); в Воскресение - 6:00 и 8:30; в Двунадесятые праздники - 8:30",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.942529,
+      "longitude": 60.473599
+    },
+    "imageName": "GaninaYama"
+  },
+  {
+    "name": "Свято-Николаевский мон.",
+    "category": "Монастырское благочиние",
+    "state": "г. Верхотурье",
+    "id": 1011,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://monastyr.org/kontakty.html",
+    "explanation": "Контактные телефоны: канцелярия +7999-562-36-50; паломническая служба +7 (953)-387-86-24; паломническая гостиница +7 (922)-296-36-87",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 58.86318,
+      "longitude": 60.809828
+    },
+    "imageName": "VerhoturieSimeon"
+  },
+  {
+    "name": "Успения пр.Богородицы",
+    "category": "Ивановское благочиние",
+    "state": "г.Екатеринбург",
+    "id": 1012,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://www.sobor-uspenie.ru/raspisanie_slujb",
+    "explanation": null,
+    "timeTable": {
+      "monday": {
+        "morning": "7-30 -  Часы. Божественная Литургия. Молебен. Лития",
+        "evening": "17-50 - 9 час. Вечерня. Утреня. 1 час. Исповедь."
+      },
+      "tuesdayFriday": {
+        "morning": "7-30 -  Часы. Божественная Литургия. Молебен. Лития",
+        "evening": "17-50 - 9 час. Вечерня. Утреня. 1 час. Исповедь."
+      },
+      "saturday": {
+        "morning": "9-00 – Панихида. Часы. Божественная Литургия. Молебен.",
+        "evening": "15-40 – 9 час. Молитвы перед исповедью. Всенощное бдение. Исповедь."
+      },
+      "sunday": {
+        "morning": "6-40 – Ранняя Литургия. 9:00 –  Поздняя Литургия.",
+        "evening": "15-50 – 9 час. Вечерня. Утреня с акафистом Успению Пресвятой Богородицы. 1 час. Исповедь."
+      }
+    },
+    "coordinates": {
+      "latitude": 56.839134,
+      "longitude": 60.556269
+    },
+    "imageName": "UspenskiVIZ"
+  },
+  {
+    "name": "Архистратига Михаила",
+    "category": "Ревдинское благочиние",
+    "state": "г. Ревда",
+    "id": 1013,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://ekaterinburg-eparhia.ru/building/chrames/182/",
+    "explanation": "Службы в храме совершаются ежедневно. Начало вечернего богослужения в 16:00, Божественной литургии в 8:00. Ежедневно совершаются молебны с акафистами Архистратигу Михаилу, св. блж. Матроне Московской, свт. Спиридону Тримифунтскому, свт. Николаю Чудотворцу, перед иконами Божией Матери «Неупиваемая чаша» и «Всецарица». +7 (34397) 2-56-10, +7(912) 291-99-48, г. Ревда, пер. Клубный 2 а",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.798024,
+      "longitude": 59.938156
+    },
+    "imageName": "Revda"
+  },
+  {
+    "name": "свт.Николая Чудотворца",
+    "category": "Полевское благочиние",
+    "state": "пос. Курганово",
+    "id": 1014,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "http://kurganovo.cerkov.ru/",
+    "explanation": "Расписание богослужений можно узнать по телефону +7(982)702-54-02. Адрес храма: Свердловская область, Полевской район, село Курганово, ул. Пионерская, д. 10.",
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.626174,
+      "longitude": 60.37693
+    },
+    "imageName": "Kurganovo"
+  },
+  {
+    "name": "Касперовской иконы пр.Богородицы",
+    "category": "Пригородное благочиние",
+    "state": "пос. Кольцово",
+    "id": 1015,
+    "isFeatured": false,
+    "isFavorite": false,
+    "park": "https://hram-koltsovo.ru/Str3_OrthodoxCalendar/Str3_1_Timetable/Str3_1_Timetable.php",
+    "explanation": null,
+    "timeTable": null,
+    "coordinates": {
+      "latitude": 56.756201,
+      "longitude": 60.81483
+    },
+    "imageName": "Koltsovo"
+  }
+]
