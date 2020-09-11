@@ -29,7 +29,10 @@ final class UserData: ObservableObject {
     }
     
     func takeUrl () {
-        let url = URL(string:"https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
+        let url = URL(string:"https://pastebin.com/raw/UWJm1DbF")!
+            
+            
+           // https://api.jsonbin.io/b/5f3f5b85993a2e110d32b538/latest")!
         
             //            https://api.jsonbin.io/b/5f3ba8124d93991036172dbc/latest")!
             //https://files.fm/down.php?i=xt239puv")!

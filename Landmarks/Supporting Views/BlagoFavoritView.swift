@@ -58,7 +58,7 @@ struct BlagoFavoritView: View {
         Form {
             if !userData.showFavoritesOnly {
                 
-                VStack (alignment: .leading, spacing: 10) {
+               // VStack (alignment: .leading, spacing: 10) {
                     ForEach (self.userData.categories.keys.sorted(), id: \.self) { key in
                         Section(
                             header:
@@ -85,7 +85,7 @@ struct BlagoFavoritView: View {
                             FooterView(items: self.userData.categories[key]!, key: key)
                             }
                         }
-                    }
+                    //}
                 } //foreach
             }
             else
