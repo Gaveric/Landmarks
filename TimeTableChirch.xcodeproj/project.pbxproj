@@ -143,6 +143,7 @@
 		B7394859229F194000C47603 = {
 			isa = PBXGroup;
 			children = (
+				CE8EC6AB250B7E1B00584C14 /* db.json */,
 				CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */,
 				CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */,
 				B7394864229F194000C47603 /* Landmarks */,
@@ -165,7 +166,6 @@
 			children = (
 				B7394865229F194000C47603 /* AppDelegate.swift */,
 				B7394867229F194000C47603 /* SceneDelegate.swift */,
-				CE8EC6AB250B7E1B00584C14 /* db.json */,
 				CE066C192456A43600ED1C0D /* Resources */,
 				B739487E229F282200C47603 /* Models */,
 				B739487D229F1C0100C47603 /* Supporting Views */,
