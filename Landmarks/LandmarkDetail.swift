@@ -64,37 +64,28 @@ struct LandmarkDetail: View {
               
                     VStack (alignment: .leading){
                         Text ("Расписание Богослужений:").bold()
-       
                     }
-                   
-                    
                     VStack(alignment: .leading) {
                         Text ("Понедельник:").bold()
                         Text (landmark.timeTable!.monday.morning)
                         Text (landmark.timeTable!.monday.evening)
-                    
                     }
-                    
                     VStack(alignment: .leading) {
                         Text ("Вторник-Пятница:").bold()
                         Text (landmark.timeTable!.tuesdayFriday.morning)
                         Text (landmark.timeTable!.tuesdayFriday.evening)
                      }
-                    
                     VStack (alignment: .leading) {
                         Text ("Суббота").bold()
                         Text (landmark.timeTable!.saturday.morning)
                         Text (landmark.timeTable!.saturday.evening)
                      }
-                    
-                    
                     VStack(alignment: .leading) {
                         Text ("Воскресение:").bold()
                         Text (landmark.timeTable!.sunday.morning)
                         Text (landmark.timeTable!.sunday.evening)
                      }
-                    
-                } // List end
+                } // дневное расписание закончилось
                     .font(.body)
             } else if landmark.explanation == nil && landmark.timeTable == nil{
                 WebView (url: landmark.park).padding()
@@ -106,6 +97,8 @@ struct LandmarkDetail: View {
                 Text (landmark.explanation!)
                     .padding(.all)
             }
+            
+            if landmark.note != nil { Text (landmark.note!)}
             
             Spacer()
             

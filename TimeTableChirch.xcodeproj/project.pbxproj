@@ -44,6 +44,7 @@
 		CE83FD8524E264F9000DF202 /* Sretenie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE83FD8424E264F9000DF202 /* Sretenie.jpg */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
 		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
+		CE8EC6AD250F396C00584C14 /* Kirill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE8EC6AC250F396C00584C14 /* Kirill.jpg */; };
 		CEA0A45F248E493E00988E23 /* Stars+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */; };
 		CEA0A460248E493E00988E23 /* Stars+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */; };
 		CEA4D83B24C6AFCB00BCDE04 /* ButtonRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4D83A24C6AFCB00BCDE04 /* ButtonRefresh.swift */; };
@@ -114,6 +115,7 @@
 		CE8E762B242B83760065DD08 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
 		CE8E7631242CAEED0065DD08 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		CE8EC6AB250B7E1B00584C14 /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = db.json; sourceTree = "<group>"; };
+		CE8EC6AC250F396C00584C14 /* Kirill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kirill.jpg; sourceTree = "<group>"; };
 		CEA0A45D248E493E00988E23 /* Stars+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CEA0A45E248E493E00988E23 /* Stars+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stars+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CEA4D83A24C6AFCB00BCDE04 /* ButtonRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRefresh.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				CE8167D4250A056600EA6938 /* AleksandraNevskogo.jpg */,
 				CE8167D5250A056700EA6938 /* HramNaKrovi.jpg */,
 				CE8167D6250A056700EA6938 /* TroitskiySobor.jpg */,
+				CE8EC6AC250F396C00584C14 /* Kirill.jpg */,
 			);
 			name = Photo;
 			path = "../../../../../HandlingUserInput-1-2/Complete/Landmarks/Landmarks/Resources/Photo";
@@ -354,6 +357,7 @@
 				CEB67CBC249641DB0046CF0D /* uspenskiPrihod.jpg in Resources */,
 				CE8167D7250A056700EA6938 /* AleksandraNevskogo.jpg in Resources */,
 				CE0D791324B47AD100D6EE3E /* DefaultPhoto.jpg in Resources */,
+				CE8EC6AD250F396C00584C14 /* Kirill.jpg in Resources */,
 				CE0D791524B47AD100D6EE3E /* NikolaStanovaia.jpg in Resources */,
 				B739486F229F194200C47603 /* Preview Assets.xcassets in Resources */,
 				CE0D791024B47AD100D6EE3E /* PokrovaSarapulka.jpg in Resources */,
@@ -549,7 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
 				PRODUCT_NAME = TimeTableChurch;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -574,7 +578,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilchuk.timeTableChirch;
 				PRODUCT_NAME = TimeTableChurch;
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -12,6 +12,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var isFavorite: Bool                            // добавить в избранные
     var explanation: String?            // Пояснение о расписании (если nill - должно быть подробное расписание в timeTable)
     var timeTable: TimeTable?  // это массив дней
+    var note: String?   // примечания к расписанию
     
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
