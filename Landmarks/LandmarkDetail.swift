@@ -57,75 +57,78 @@ struct LandmarkDetail: View {
             .padding(.bottom, -20)
             
             //            Mark: Расписание
-            
-            if landmark.explanation == nil && landmark.timeTable != nil {
+            ScrollView {
+                if landmark.explanation == nil && landmark.timeTable != nil {
+                    
+                    VStack (alignment: .leading, spacing: 10){
+                        
+                        VStack (alignment: .leading){
+                            Text ("Расписание Богослужений:").bold()
+                        }
+                        VStack(alignment: .leading) {
+                            Text ("Понедельник:").bold()
+                            Text (landmark.timeTable!.monday.morning)
+                            Text (landmark.timeTable!.monday.evening)
+                        }
+                        VStack(alignment: .leading) {
+                            Text ("Вторник-Пятница:").bold()
+                            Text (landmark.timeTable!.tuesdayFriday.morning)
+                            Text (landmark.timeTable!.tuesdayFriday.evening)
+                        }
+                        VStack (alignment: .leading) {
+                            Text ("Суббота").bold()
+                            Text (landmark.timeTable!.saturday.morning)
+                            Text (landmark.timeTable!.saturday.evening)
+                        }
+                        VStack(alignment: .leading) {
+                            Text ("Воскресение:").bold()
+                            Text (landmark.timeTable!.sunday.morning)
+                            Text (landmark.timeTable!.sunday.evening)
+                        }
+                    } // дневное расписание закончилось
+                        .font(.body)
+                        .fixedSize(horizontal: false, vertical: true)
+                } else if landmark.explanation == nil && landmark.timeTable == nil{
+                    WebView (url: landmark.park).padding()
+                        .edgesIgnoringSafeArea(.top)
+                        //.offset(x: 0, y: 20)
+                        .padding(.top)
+                }
+                else {
+                    Text (landmark.explanation!)
+                        .padding(.all)
+                }
                 
-                VStack (alignment: .leading, spacing: 10){
-              
-                    VStack (alignment: .leading){
-                        Text ("Расписание Богослужений:").bold()
-                    }
-                    VStack(alignment: .leading) {
-                        Text ("Понедельник:").bold()
-                        Text (landmark.timeTable!.monday.morning)
-                        Text (landmark.timeTable!.monday.evening)
-                    }
-                    VStack(alignment: .leading) {
-                        Text ("Вторник-Пятница:").bold()
-                        Text (landmark.timeTable!.tuesdayFriday.morning)
-                        Text (landmark.timeTable!.tuesdayFriday.evening)
-                     }
-                    VStack (alignment: .leading) {
-                        Text ("Суббота").bold()
-                        Text (landmark.timeTable!.saturday.morning)
-                        Text (landmark.timeTable!.saturday.evening)
-                     }
-                    VStack(alignment: .leading) {
-                        Text ("Воскресение:").bold()
-                        Text (landmark.timeTable!.sunday.morning)
-                        Text (landmark.timeTable!.sunday.evening)
-                     }
-                } // дневное расписание закончилось
-                    .font(.body)
-            } else if landmark.explanation == nil && landmark.timeTable == nil{
-                WebView (url: landmark.park).padding()
-                .edgesIgnoringSafeArea(.top)
-                .offset(x: 0, y: -20)
-                .padding(.top, -20)
+                if landmark.note != nil { Text (landmark.note!).fixedSize(horizontal: false, vertical: true)}
+                
+                
+                Spacer()
+                
             }
-            else {
-                Text (landmark.explanation!)
-                    .padding(.all)
-            }
-            
-            if landmark.note != nil { Text (landmark.note!)}
-            
-            Spacer()
-            
             
             if landmark.explanation != nil || landmark.timeTable != nil {
-            VStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(Color.white)
-                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
-                    .frame(  height: 50)
-                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
-                    .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-                    .overlay(
-                        
-                        
-                        HStack(alignment: .top) {
-                            NavigationLink(destination: TimetableView(landmark: landmark)
-                                .environmentObject(self.userData)
-                                )
-                            {  Text ("посмотреть расписание на сайте храма")
-                                .font(.subheadline)
-                                .foregroundColor(.black)
+                VStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white)
+                        .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.3))
+                        .frame(  height: 50)
+                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                        .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                        .overlay(
+                            
+                            
+                            HStack(alignment: .top) {
+                                NavigationLink(destination: TimetableView(landmark: landmark)
+                                    .environmentObject(self.userData)
+                                    )
+                                {  Text ("посмотреть расписание на сайте храма")
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                                }
                             }
-                        }
-                )
-            }
-            .padding(.bottom)
+                    )
+                }
+                .padding(.bottom)
             }
         }
     }
