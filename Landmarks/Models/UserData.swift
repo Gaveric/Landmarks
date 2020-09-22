@@ -9,6 +9,8 @@ final class UserData: ObservableObject {
     @Published var categories: [String: [Landmark]] = [:]
     @Published var expander = [String: Bool] ()
     
+    
+    
     init() {
         takeUrl()
     }
