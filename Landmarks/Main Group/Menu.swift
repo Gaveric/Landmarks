@@ -9,45 +9,109 @@
 import SwiftUI
 
 struct Menu: View {
+    
+    
+    @Binding var showMenu: Bool
+    @Binding var index: Int
+
+    
     var body: some View {
         
         
-        VStack (alignment: .leading) {
-            HStack {
-                Image(systemName: "person")
-                    .imageScale(.large)
-                Text("Profile")
-                    .font(.headline)
-            }
-                .padding(.top, 100)
-            HStack {
-                Image(systemName: "envelope")
-                    .imageScale(.large)
-                Text("Messages")
-                    .font(.headline)
-            }
-                .padding(.top, 30)
-            HStack {
-                Image(systemName: "gear")
-                    .imageScale(.large)
-                Text("Settings")
-                    
-                    .font(.headline)
-            }
-                .padding(.top, 30)
+        
+        
+        
+        HStack {
             Spacer()
+            VStack (alignment: .trailing) {
+                
+                
+                Button(action: {
+                    self.index = 0
+                    withAnimation{
+                        self.showMenu.toggle()
+                    }
+                }) {
+                    HStack(spacing: 25){
+                        HStack {
+                            Image(systemName: "book")
+                                .imageScale(.large)
+                            Text("Расписания храмов")
+                                .font(.headline)
+                        }
+                        .padding(.top, 100)
+                }
+                .padding(.top,25)
+                }
+
+               
+                Button(action: {
+                    self.index = 1
+                    withAnimation{
+                        self.showMenu.toggle()
+                    }
+                }) {
+                    HStack(spacing: 25){
+                        HStack {
+                            Image(systemName: "message")
+                                .imageScale(.large)
+                            Text("Молитвы")
+                                .font(.headline)
+                        }
+                        .padding(.top, 15)
+                }
+                .padding(.top,15)
+                }
+
+                
+                
+                
+                
+                HStack {
+                    Image(systemName: "calendar")
+                        .imageScale(.large)
+                    Text("Календарь праздников")
+                        .font(.headline)
+                }
+                .padding(.top, 30)
+
+                
+                HStack {
+                    Image(systemName: "gear")
+                        .imageScale(.large)
+                    Text("Выбор темы")
+                        
+                        .font(.headline)
+                }
+                .padding(.top, 30)
+                
+                
+                VStack {
+                    Text("Обратная связь:").font(.headline)
+                    HStack {
+                        Image(systemName: "envelope")
+                            .imageScale(.large)
+                        Text("averic@mail.ru")
+                    }
+                }
+                .padding(.top, 30)
+                Spacer()
+                
+            }
+            .padding()
+            .frame(maxWidth: UIScreen.main.bounds.width / 2, alignment: .trailing)
+            .edgesIgnoringSafeArea(.all)
             
+            .foregroundColor(Color.blue)
         }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.gray)
-        .edgesIgnoringSafeArea(.all)
-        .foregroundColor(Color.offYellow)
+        .background(Color.offYellow)
         
     }
 }
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        Menu()
+       // @Binding var showMenu = true
+      // Menu(showMenu: true)
+        Text ("")
     }
 }

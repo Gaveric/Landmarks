@@ -12,7 +12,7 @@ struct TheMain: View {
    
         @EnvironmentObject private var userData: UserData
         @Environment(\.managedObjectContext) var managedObjectContext
-        @State var expand = false
+      //  @State var expand = false
         
     
         @Binding var showMenu: Bool
@@ -55,13 +55,27 @@ struct TheMain: View {
                                             .font(.largeTitle)
                                             .fontWeight(.semibold)
                                         Spacer()
+                                    
+                                        
                                         Button(action: {
-                                            self.showMenu = true
+                                            withAnimation{
+                                                self.showMenu.toggle()
+                                            }
                                         }) {
+                                                // close Button...
+                                                
+                                                Image(systemName: self.showMenu ? "line.horizontal.3" : "line.horizontal.3") //"xmark" : "line.horizontal.3")
+                                                    .resizable()
+                                                    .frame(width: self.showMenu ? 18 : 22, height: 18)
+                                                    .foregroundColor(Color.black.opacity(0.4))
+                                            
+                                            
                                            // Text("Паки")
-                                            Image(systemName: "line.horizontal.3")
-                                            .imageScale(.large)
-                                        }                                    }
+//                                            Image(systemName: "line.horizontal.3")
+//                                            .imageScale(.large)
+                                        }
+                                        
+                                    }
                                     Text("Екатеринбургской епархии")
                                         .font(.headline)
                                 }.padding(.leading)                                
