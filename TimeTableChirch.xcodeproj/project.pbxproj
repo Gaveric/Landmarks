@@ -30,7 +30,7 @@
 		CE0D791424B47AD100D6EE3E /* UspeniaVP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790D24B47AD100D6EE3E /* UspeniaVP.jpg */; };
 		CE0D791524B47AD100D6EE3E /* NikolaStanovaia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE0D790E24B47AD100D6EE3E /* NikolaStanovaia.jpg */; };
 		CE38360025133417002B9233 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3835FF25133417002B9233 /* Menu.swift */; };
-		CE38360225133799002B9233 /* TheMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38360125133799002B9233 /* TheMain.swift */; };
+		CE38360225133799002B9233 /* TheTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38360125133799002B9233 /* TheTimeTable.swift */; };
 		CE4C0F4A2475555000A5ACAA /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE4C0F482475555000A5ACAA /* CoreDataModel.xcdatamodeld */; };
 		CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */; };
 		CE81674024F7DA4F00EA6938 /* landmarkData3.json in Resources */ = {isa = PBXBuildFile; fileRef = CE81673F24F7DA4F00EA6938 /* landmarkData3.json */; };
@@ -44,7 +44,9 @@
 		CE8167D8250A056700EA6938 /* HramNaKrovi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE8167D5250A056700EA6938 /* HramNaKrovi.jpg */; };
 		CE8167D9250A056700EA6938 /* TroitskiySobor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE8167D6250A056700EA6938 /* TroitskiySobor.jpg */; };
 		CE83FD8524E264F9000DF202 /* Sretenie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE83FD8424E264F9000DF202 /* Sretenie.jpg */; };
-		CE8AB7462519E0E300D9F825 /* Prayes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AB7452519E0E300D9F825 /* Prayes.swift */; };
+		CE8AB7462519E0E300D9F825 /* ThePrayes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AB7452519E0E300D9F825 /* ThePrayes.swift */; };
+		CE8AB748251B162400D9F825 /* PrayText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AB747251B162400D9F825 /* PrayText.swift */; };
+		CE8AB74D251B1EDF00D9F825 /* Pray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AB74C251B1EDF00D9F825 /* Pray.swift */; };
 		CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E762B242B83760065DD08 /* TimetableView.swift */; };
 		CE8E7632242CAEED0065DD08 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E7631242CAEED0065DD08 /* PDFKitView.swift */; };
 		CE8EC6AD250F396C00584C14 /* Kirill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE8EC6AC250F396C00584C14 /* Kirill.jpg */; };
@@ -83,7 +85,7 @@
 		CE0D790D24B47AD100D6EE3E /* UspeniaVP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UspeniaVP.jpg; sourceTree = "<group>"; };
 		CE0D790E24B47AD100D6EE3E /* NikolaStanovaia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NikolaStanovaia.jpg; sourceTree = "<group>"; };
 		CE3835FF25133417002B9233 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		CE38360125133799002B9233 /* TheMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMain.swift; sourceTree = "<group>"; };
+		CE38360125133799002B9233 /* TheTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTimeTable.swift; sourceTree = "<group>"; };
 		CE4C0F492475555000A5ACAA /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		CE81673F24F7DA4F00EA6938 /* landmarkData3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData3.json; sourceTree = "<group>"; };
@@ -117,7 +119,10 @@
 		CE83FD8024E2641D000DF202 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "icons/Icon-60@2x.png"; sourceTree = SOURCE_ROOT; };
 		CE83FD8124E2641D000DF202 /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Spotlight-40.png"; path = "icons/Icon-Spotlight-40.png"; sourceTree = SOURCE_ROOT; };
 		CE83FD8424E264F9000DF202 /* Sretenie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sretenie.jpg; sourceTree = "<group>"; };
-		CE8AB7452519E0E300D9F825 /* Prayes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayes.swift; sourceTree = "<group>"; };
+		CE8AB7452519E0E300D9F825 /* ThePrayes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePrayes.swift; sourceTree = "<group>"; };
+		CE8AB747251B162400D9F825 /* PrayText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayText.swift; sourceTree = "<group>"; };
+		CE8AB74C251B1EDF00D9F825 /* Pray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pray.swift; sourceTree = "<group>"; };
+		CE8AB74E251B267C00D9F825 /* prayes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prayes.swift; sourceTree = "<group>"; };
 		CE8E762B242B83760065DD08 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
 		CE8E7631242CAEED0065DD08 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		CE8EC6AB250B7E1B00584C14 /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = db.json; sourceTree = "<group>"; };
@@ -177,7 +182,6 @@
 				CE066C192456A43600ED1C0D /* Resources */,
 				B739487E229F282200C47603 /* Models */,
 				CE38367D25138CF5002B9233 /* Main Group */,
-				CE38367E25138D1B002B9233 /* Row Group */,
 				B739487D229F1C0100C47603 /* Supporting Views */,
 				B739486B229F194200C47603 /* Assets.xcassets */,
 				B7394870229F194200C47603 /* LaunchScreen.storyboard */,
@@ -210,10 +214,10 @@
 		B739487E229F282200C47603 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B7D2AAC4229F4D7C0061E5F5 /* UserData.swift */,
 				B739487F229F28B900C47603 /* Landmark.swift */,
+				CE8AB74C251B1EDF00D9F825 /* Pray.swift */,
+				B7D2AAC4229F4D7C0061E5F5 /* UserData.swift */,
 				B7394880229F28B900C47603 /* Data.swift */,
-				CEA4D83A24C6AFCB00BCDE04 /* ButtonMenu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CE81673F24F7DA4F00EA6938 /* landmarkData3.json */,
+				CE8AB74E251B267C00D9F825 /* prayes.swift */,
 				CE30C2F824C04DBB00FB5688 /* icons */,
 				CE0D790724B45A8500D6EE3E /* Photo */,
 			);
@@ -289,22 +294,33 @@
 			children = (
 				B73948A0229F2E1F00C47603 /* ContentView.swift */,
 				CE3835FF25133417002B9233 /* Menu.swift */,
-				CE38360125133799002B9233 /* TheMain.swift */,
-				CE8AB7452519E0E300D9F825 /* Prayes.swift */,
+				CEA4D83A24C6AFCB00BCDE04 /* ButtonMenu.swift */,
+				CE8AB74B251B17B400D9F825 /* PrayesGroup */,
+				CE38367E25138D1B002B9233 /* TimeTableGroup */,
 			);
 			path = "Main Group";
 			sourceTree = "<group>";
 		};
-		CE38367E25138D1B002B9233 /* Row Group */ = {
+		CE38367E25138D1B002B9233 /* TimeTableGroup */ = {
 			isa = PBXGroup;
 			children = (
+				CE38360125133799002B9233 /* TheTimeTable.swift */,
 				CE81678A250243CD00EA6938 /* BlagoFavoritView.swift */,
-				CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */,
 				CECBCB7824BECE29007947C5 /* FooterView.swift */,
 				B739489E229F2D9700C47603 /* LandmarkRow.swift */,
+				CE537FAF2463BCC000790F8C /* LandmarkDetail.swift */,
 				CE8E762B242B83760065DD08 /* TimetableView.swift */,
 			);
-			path = "Row Group";
+			path = TimeTableGroup;
+			sourceTree = "<group>";
+		};
+		CE8AB74B251B17B400D9F825 /* PrayesGroup */ = {
+			isa = PBXGroup;
+			children = (
+				CE8AB7452519E0E300D9F825 /* ThePrayes.swift */,
+				CE8AB747251B162400D9F825 /* PrayText.swift */,
+			);
+			path = PrayesGroup;
 			sourceTree = "<group>";
 		};
 		E573155042573F7430EB4C1C /* LICENSE */ = {
@@ -413,15 +429,17 @@
 				CECBCB7924BECE29007947C5 /* FooterView.swift in Sources */,
 				CE066C3C2456E40D00ED1C0D /* WebView.swift in Sources */,
 				CE8E762C242B83760065DD08 /* TimetableView.swift in Sources */,
-				CE8AB7462519E0E300D9F825 /* Prayes.swift in Sources */,
+				CE8AB748251B162400D9F825 /* PrayText.swift in Sources */,
+				CE8AB7462519E0E300D9F825 /* ThePrayes.swift in Sources */,
 				B7394866229F194000C47603 /* AppDelegate.swift in Sources */,
 				B739487A229F1B3F00C47603 /* CircleImage.swift in Sources */,
 				CE81678B250243CD00EA6938 /* BlagoFavoritView.swift in Sources */,
 				CE537FB02463BCC000790F8C /* LandmarkDetail.swift in Sources */,
 				CEA0A45F248E493E00988E23 /* Stars+CoreDataClass.swift in Sources */,
-				CE38360225133799002B9233 /* TheMain.swift in Sources */,
+				CE38360225133799002B9233 /* TheTimeTable.swift in Sources */,
 				CEA4D83B24C6AFCB00BCDE04 /* ButtonMenu.swift in Sources */,
 				B739487C229F1B6800C47603 /* MapView.swift in Sources */,
+				CE8AB74D251B1EDF00D9F825 /* Pray.swift in Sources */,
 				B73948A1229F2E1F00C47603 /* ContentView.swift in Sources */,
 				B7394868229F194000C47603 /* SceneDelegate.swift in Sources */,
 				CE38360025133417002B9233 /* Menu.swift in Sources */,

@@ -8,24 +8,22 @@
 
 import SwiftUI
 
-struct Prayes: View {
+struct ThePrayes: View {
+    
     @EnvironmentObject private var userData: UserData
     @Environment(\.managedObjectContext) var managedObjectContext
+    //var prayes =  [Pray]
     
-    // @State var expand = false
-    @Binding var showMenu: Bool
+    
     
     var body: some View {
         
-        
-        VStack {
-            Spacer()
-            
-            // Mark: - НавигейшнВью
-            
+        ZStack {
+           
+
+                        // MARK: - НавигейшнВью
             NavigationView {
                 VStack {
-                    
                     VStack {
                         
                         // MARK: - Шапка фото
@@ -38,59 +36,59 @@ struct Prayes: View {
                                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
                                 .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
                             
-                            
-                            
-                            VStack (alignment: .leading){
+                            VStack (){
                                 HStack {
                                     Text("Молитвы")//.font(.system(.headline, design: .rounded))
                                         .font(.largeTitle)
                                         .fontWeight(.semibold)
                                     Spacer()
                                     
-                                    
-                                    Button(action: {
-                                        withAnimation{
-                                            self.showMenu.toggle()
-                                        }
-                                    }) {
-                                        // close Button...
-                                        
-                                        Image(systemName: self.showMenu ? "line.horizontal.3" : "line.horizontal.3") //"xmark" : "line.horizontal.3")
-                                            .resizable()
-                                            .frame(width: self.showMenu ? 18 : 22, height: 18)
-                                            .foregroundColor(Color.black.opacity(0.4))
-                                    }
-                                    
+                                    // MARK: - Кнопка
+                                    ButtonMenu()
                                 }
                                 
                             }.padding(.leading)
-                        }.padding(.trailing, 18.0).frame( height:80)
-                        
-                        
-                        
-                        
+                        }
+                            .padding([.top, .leading, .trailing])//.padding(.trailing, 18.0)
+                            //.frame( height:80)
                         
                         // MARK: - Молитвы
                         
-                        
+                        Form  {
+                            
+                            ForEach (userData.prayes) { pray in
+                                RoundedRectangle(cornerRadius: 15)
+                                    .fill(Color.offYellow)
+                                    .overlay(RoundedRectangle(cornerRadius: 15).stroke(Color.gray, lineWidth: 0.41))
+                                    .frame(  height: 50)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 10, x: 10, y: 10)
+                                    .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
+                                    .overlay(
+                                        VStack{
+                                        NavigationLink(destination: PrayText(pray: pray)) {
+                                            Text(pray.id)
+                                }
+                                        }
+                                        .padding(.horizontal)
+                                )
+                            }
+                        }
                         
                     }.navigationBarTitle("назад")
                         .navigationBarHidden(true)
                     
                     Spacer()
-                }//.edgesIgnoringSafeArea(.all)
-                
-            }.padding(.top, -2.0)
+                }
+            }.padding(.top)
             
             
-        }
-    }
+        }    }
 }
 
 struct Prayes_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            ContentView()
+            ThePrayes()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

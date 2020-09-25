@@ -2,13 +2,17 @@ import UIKit
 import SwiftUI
 import CoreLocation
 import CoreData
+
  
 extension Color {
     static let offWhite = Color(red: 0.96, green: 0.96, blue: 0.96)
     static let offBlue = Color(red: 0.93, green: 0.96, blue: 0.97)
-    static let offBlack = Color(red: 0.3, green: 0.3, blue: 0.3)
-    static let offYellow = Color(red: 0.99, green: 0.99, blue: 0.87)
-    
+   
+    //static let offBlack = Color(red: 0.3, green: 0.3, blue: 0.3)
+    //static let offYellow = Color(red: 0.99, green: 0.99, blue: 0.87)
+    static let offYellow = Color(red: 246/255, green:244/255, blue: 238/255)
+    static let offBlack = Color(red: 80/255,green: 66/255, blue:61/255)
+    // static let offBlue = Color(red: 226/255, green:233/255, blue: 240/255)
 
     //Color(red: 225 / 255, green: 225 / 255, blue: 235 / 255)
 }
@@ -32,6 +36,14 @@ struct SimpleButtonStyle: ButtonStyle {
         configuration.label
     }
 }
+
+ extension UIView {
+     func blink(duration: TimeInterval = 0.5, delay: TimeInterval = 0.0, alpha: CGFloat = 0.0) {
+         UIView.animate(withDuration: duration, delay: delay, options: [.curveEaseInOut, .repeat, .autoreverse], animations: {
+             self.alpha = alpha
+         })
+     }
+ }
 
 var landmarkData: [Landmark] = load("landmarkData3.json")
 

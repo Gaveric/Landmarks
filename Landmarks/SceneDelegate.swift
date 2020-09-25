@@ -8,6 +8,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
       
  //       let contentView = ContentView().environmentObject(UserData())
+     UITableView.appearance().separatorColor = .clear
         
        let context = persistentContainer.viewContext
        let contentView =  ContentView().environmentObject(UserData()).environment(\.managedObjectContext, context)
