@@ -54,7 +54,7 @@ struct ThePrayes: View {
                         
                         // MARK: - Молитвы
                         
-                        Form  {
+                        List  {
                             
                             ForEach (userData.prayes) { pray in
                                 RoundedRectangle(cornerRadius: 15)
@@ -72,7 +72,8 @@ struct ThePrayes: View {
                                         .padding(.horizontal)
                                 )
                             }
-                        }
+                        }.listStyle(PlainListStyle())
+                                 
                         
                     }.navigationBarTitle("назад")
                         .navigationBarHidden(true)

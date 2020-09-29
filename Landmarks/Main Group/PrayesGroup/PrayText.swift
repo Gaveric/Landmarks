@@ -16,10 +16,12 @@ struct PrayText: View {
     
     var body: some View {
         VStack {
-            Stepper("", value: $fontSize)
-                .padding(.vertical)
+           
             ScrollView {
+                
                 VStack {
+                    Stepper("", value: $fontSize)
+                        .padding(.vertical)
                     Text(pray.id).bold()
                     Text(pray.text).padding(.top, 30)
                 }
@@ -27,7 +29,7 @@ struct PrayText: View {
                 .foregroundColor(Color.offBlack)
                 .background(Color.offYellow)
             }
-        }.padding(.top, -30)
+        }.padding(.top, -110)
     }
 }
 

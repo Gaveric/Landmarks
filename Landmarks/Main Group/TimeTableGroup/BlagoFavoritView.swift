@@ -37,7 +37,7 @@ struct BlagoFavoritView: View {
                                         HStack {
                                             Text(key)
                                                 .frame(height: 50)
-                                                .font(.headline)
+                                                .font(.subheadline)
                                             Image(systemName:  self.userData.expander[key]! ? "chevron.up" : "chevron.down")
                                         } // Здесь живут и множатся благочиния
                                 ) // конец оверлея
