@@ -9,7 +9,10 @@ struct ContentView: View {
         
     var body: some View {
         // MARK: Drager
-        
+        if #available(iOS 13.0, *) {
+            UIWindow.appearance().overrideUserInterfaceStyle = .dark
+        }
+
         let drag = DragGesture()
             .onEnded {
                 if $0.translation.width > 100 {

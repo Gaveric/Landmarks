@@ -12,12 +12,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
        let context = persistentContainer.viewContext
        let contentView =  ContentView().environmentObject(UserData()).environment(\.managedObjectContext, context)
+        
 
+        
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
+            
+            if #available(iOS 13.0, *) {
+                window.overrideUserInterfaceStyle = .light
+            }
         }
     }
 

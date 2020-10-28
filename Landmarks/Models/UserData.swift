@@ -1040,20 +1040,20 @@ final class UserData: ObservableObject {
         
     }
     
-    func takeBondle() {
-        
-        self.landmarks = landmarkData
-        
-        for i in 0..<self.landmarks.count {
-            dump (self.landmarks[i].name)
-            dump (UserDefaults.standard.string (forKey:  self.landmarks[i].name))
-            
-            if UserDefaults.standard.string (forKey:  self.landmarks[i].name) != nil {
-                
-                self.landmarks[i].isFavorite =  Bool (UserDefaults.standard.string (forKey: self.landmarks[i].name) ?? "false")!
-            }}
-        
-    }
+//    func takeBondle() {
+//        
+//        self.landmarks = landmarkData
+//        
+//        for i in 0..<self.landmarks.count {
+//            dump (self.landmarks[i].name)
+//            dump (UserDefaults.standard.string (forKey:  self.landmarks[i].name))
+//            
+//            if UserDefaults.standard.string (forKey:  self.landmarks[i].name) != nil {
+//                
+//                self.landmarks[i].isFavorite =  Bool (UserDefaults.standard.string (forKey: self.landmarks[i].name) ?? "false")!
+//            }}
+//        
+//    }
     
     
 }
