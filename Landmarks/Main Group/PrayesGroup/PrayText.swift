@@ -20,16 +20,17 @@ struct PrayText: View {
             ScrollView {
                 
                 VStack {
+                    Spacer()
                     Stepper("", value: $fontSize)
-                        .padding(.vertical)
+                        .padding()
                     Text(pray.id).bold()
-                    Text(pray.text).padding(.top, 30)
+                    Text(pray.text).padding()
                 }
                 .font(Font.custom("HelveticaNeue", size: fontSize))
                 .foregroundColor(Color.offBlack)
                 .background(Color.offYellow)
             }
-        }.padding(.top, -110)
+        }.padding(.top, -30)
     }
 }
 
@@ -41,3 +42,5 @@ struct PrayesDitail_Previews: PreviewProvider {
         Text("Молитвы ко Причастию")
     }
 }
+
+

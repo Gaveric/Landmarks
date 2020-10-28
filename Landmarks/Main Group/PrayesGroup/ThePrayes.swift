@@ -78,8 +78,8 @@ struct ThePrayes: View {
                                  
                         
                     }.navigationBarTitle("назад")
-                        .navigationBarHidden(true)
-                    
+                    .navigationBarHidden(true) 
+ 
                     Spacer()
                 }
             }.padding(.top)
@@ -98,3 +98,41 @@ struct Prayes_Previews: PreviewProvider {
         .environmentObject(UserData())
     }
 }
+
+
+//
+//import SwiftUI
+//
+//
+//struct PrayText: View {
+//    @EnvironmentObject private var userData: UserData
+//    var pray : Pray
+//    @State private var fontSize: CGFloat = 14
+//    
+//    var body: some View {
+//        VStack {
+//           
+//            ScrollView {
+//                
+//                VStack {
+//                    Stepper("", value: $fontSize)
+//                        .padding()
+//                    Text(pray.id).bold()
+//                    Text(pray.text).padding(.top, 30)
+//                }
+//                .font(Font.custom("HelveticaNeue", size: fontSize))
+//                .foregroundColor(Color.offBlack)
+//                .background(Color.offYellow)
+//            }
+//        }.padding(.top, -110)
+//    }
+//}
+//
+//struct PrayesDitail_Previews: PreviewProvider {
+//    static var previews: some View {
+//        // @EnvironmentObject private var userData: UserData
+//        
+//        //PrayText(pray[1])
+//        Text("Молитвы ко Причастию")
+//    }
+//}
